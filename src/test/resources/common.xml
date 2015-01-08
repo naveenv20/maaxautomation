@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="commonTest">
+
+
+
+
+<test name="Test 2">
+    <classes>
+        <class name="com.maax.businessmanager.common.provision_copy_defect_Test" ></class>  
+    </classes>
+</test>
+
+
+
+
+</suite>
+

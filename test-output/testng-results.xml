@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="142553" started-at="2014-12-30T17:55:50Z" finished-at="2014-12-30T17:58:12Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="142553" started-at="2014-12-30T17:55:50Z" finished-at="2014-12-30T17:58:12Z">
+      <class name="com.maax.businessmanager.common.provision_copy_defect_Test">
+        <test-method status="PASS" signature="Provisioncopy(java.util.Hashtable)[pri:0, instance:com.maax.businessmanager.common.provision_copy_defect_Test@7a0ac6e3]" name="Provisioncopy" duration-ms="129341" started-at="2014-12-30T13:55:50Z" data-provider="SuiteCommontestdata" finished-at="2014-12-30T13:58:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Successmess=Data Updated Successfully, LOB=Income Replacement, Username=bcchase, Result=, Runmode=Y, Benefit=STD, copypagecode=DEC3016, Password=Welcome1, copypagestatus=Inforce, copypagedesc=DEC3015DESC, Browser=Firefox}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Provisioncopy -->
+        <test-method status="PASS" signature="Provisioncopy(java.util.Hashtable)[pri:0, instance:com.maax.businessmanager.common.provision_copy_defect_Test@7a0ac6e3]" name="Provisioncopy" duration-ms="3818" started-at="2014-12-30T13:58:00Z" data-provider="SuiteCommontestdata" finished-at="2014-12-30T13:58:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Successmess=Data Updated Successfully, LOB=Life, Username=bcchase, Result=, Runmode=N, Benefit=Member Life, copypagecode=DEC3016, Password=Welcome1, copypagestatus=Inforce, copypagedesc=DEC3015DESC, Browser=Firefox}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Provisioncopy -->
+        <test-method status="PASS" signature="Provisioncopy(java.util.Hashtable)[pri:0, instance:com.maax.businessmanager.common.provision_copy_defect_Test@7a0ac6e3]" name="Provisioncopy" duration-ms="4457" started-at="2014-12-30T13:58:04Z" data-provider="SuiteCommontestdata" finished-at="2014-12-30T13:58:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Successmess=Data Updated Successfully, LOB=AD & D, Username=bcchase, Result=, Runmode=N, Benefit=Member AD & D, copypagecode=DEC3016, Password=Welcome1, copypagestatus=Inforce, copypagedesc=DEC3015DESC, Browser=Firefox}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Provisioncopy -->
+        <test-method status="PASS" signature="Provisioncopy(java.util.Hashtable)[pri:0, instance:com.maax.businessmanager.common.provision_copy_defect_Test@7a0ac6e3]" name="Provisioncopy" duration-ms="4116" started-at="2014-12-30T13:58:08Z" data-provider="SuiteCommontestdata" finished-at="2014-12-30T13:58:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Successmess=Data Updated Successfully, LOB=Health & Dental, Username=bcchase, Result=, Runmode=N, Benefit=Dental, copypagecode=DEC3016, Password=Welcome1, copypagestatus=Inforce, copypagedesc=DEC3015DESC, Browser=Firefox}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Provisioncopy -->
+      </class> <!-- com.maax.businessmanager.common.provision_copy_defect_Test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
