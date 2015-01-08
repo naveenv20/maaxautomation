@@ -33,7 +33,7 @@ public class provision_copy_defect_Test extends TestBase{
 			
 		 //RemoteWebDriver d1=null;
 	d1=init("Provisioncopy", "Common",data,false);
-	//d1=init("basicnavigation", "Common",data,true);
+	///d1=init("basicnavigation", "Common",data,true);
 	
 	
 		checkrunmodes("Common", "Provisioncopy", data.get("Runmode"));
