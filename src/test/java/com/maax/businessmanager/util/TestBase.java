@@ -39,6 +39,7 @@ public class TestBase {
 	
 	
 	public static Logger APPLICATION_LOG;
+
 	//going to use this objdata ( for reading the object propertie of a test case
 	public Hashtable<String,String> objdata;
 //	 public static  WebDriver d1; 

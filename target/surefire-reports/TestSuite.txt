@@ -1,4 +1,263 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 6, Time elapsed: 58.677 sec
+Tests run: 10, Failures: 8, Errors: 0, Skipped: 0, Time elapsed: 335.909 sec <<< FAILURE!
+Provisioncopy(com.maax.businessmanager.common.provision_copy_defect_Test)  Time elapsed: 38.275 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[contains(@id,'connection-working') and contains(@class,'iceOutConStatActv') and contains(@style,'visibility: visible')]"}
+Command duration or timeout: 15 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'LMTN202461', ip: '167.74.108.52', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_25'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.4.0, platform=WINDOWS, nativeEvents=true, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 4585e2aa-ad2a-4608-b17e-6f7ad43bfaed
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.maax.businessmanager.util.TestBase.dynamicwait(TestBase.java:249)
+	at com.maax.businessmanager.common.provision_copy_defect_Test.Provisioncopy(provision_copy_defect_Test.java:89)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[contains(@id,'connection-working') and contains(@class,'iceOutConStatActv') and contains(@style,'visibility: visible')]"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'LMTN202461', ip: '167.74.108.52', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_25'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous8014481421836216495webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:133)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous8014481421836216495webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9650:3)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous8014481421836216495webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11635:16)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous8014481421836216495webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11640:7)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous8014481421836216495webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11582:5)
+
+Provisioncopy(com.maax.businessmanager.common.provision_copy_defect_Test)  Time elapsed: 31.656 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[contains(@id,'connection-working') and contains(@class,'iceOutConStatActv') and contains(@style,'visibility: visible')]"}
+Command duration or timeout: 9 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'LMTN202461', ip: '167.74.108.52', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_25'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.4.0, platform=WINDOWS, nativeEvents=true, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b15d4a34-b2f3-47c2-9def-9cdf1f9cc79c
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.maax.businessmanager.util.TestBase.dynamicwait(TestBase.java:249)
+	at com.maax.businessmanager.common.provision_copy_defect_Test.Provisioncopy(provision_copy_defect_Test.java:89)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[contains(@id,'connection-working') and contains(@class,'iceOutConStatActv') and contains(@style,'visibility: visible')]"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'LMTN202461', ip: '167.74.108.52', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_25'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous6668945412590525596webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:133)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous6668945412590525596webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9650:3)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous6668945412590525596webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11635:16)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous6668945412590525596webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11640:7)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous6668945412590525596webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11582:5)
+
+Provisioncopy(com.maax.businessmanager.common.provision_copy_defect_Test)  Time elapsed: 31.453 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[contains(@id,'connection-working') and contains(@class,'iceOutConStatActv') and contains(@style,'visibility: visible')]"}
+Command duration or timeout: 12 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'LMTN202461', ip: '167.74.108.52', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_25'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.4.0, platform=WINDOWS, nativeEvents=true, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 3429a9c7-2b85-4ff3-a68b-36cfa6a0c706
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.maax.businessmanager.util.TestBase.dynamicwait(TestBase.java:249)
+	at com.maax.businessmanager.common.provision_copy_defect_Test.Provisioncopy(provision_copy_defect_Test.java:89)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[contains(@id,'connection-working') and contains(@class,'iceOutConStatActv') and contains(@style,'visibility: visible')]"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'LMTN202461', ip: '167.74.108.52', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_25'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous3025438996023006925webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:133)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous3025438996023006925webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9650:3)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous3025438996023006925webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11635:16)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous3025438996023006925webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11640:7)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous3025438996023006925webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11582:5)
+
+Provisioncopy(com.maax.businessmanager.common.provision_copy_defect_Test)  Time elapsed: 31.386 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[contains(@id,'connection-working') and contains(@class,'iceOutConStatActv') and contains(@style,'visibility: visible')]"}
+Command duration or timeout: 10 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'LMTN202461', ip: '167.74.108.52', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_25'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.4.0, platform=WINDOWS, nativeEvents=true, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 564b4ef5-a8a5-40da-9c65-83c2c9d82f71
+	at sun.reflect.GeneratedConstructorAccessor31.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.maax.businessmanager.util.TestBase.dynamicwait(TestBase.java:249)
+	at com.maax.businessmanager.common.provision_copy_defect_Test.Provisioncopy(provision_copy_defect_Test.java:89)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[contains(@id,'connection-working') and contains(@class,'iceOutConStatActv') and contains(@style,'visibility: visible')]"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'LMTN202461', ip: '167.74.108.52', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_25'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous1110575283838732933webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:133)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous1110575283838732933webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9650:3)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous1110575283838732933webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11635:16)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous1110575283838732933webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11640:7)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous1110575283838732933webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11582:5)
+
+Provisioncopy(com.maax.businessmanager.common.provision_copy_defect_Test)  Time elapsed: 31.09 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[contains(@id,'connection-working') and contains(@class,'iceOutConStatActv') and contains(@style,'visibility: visible')]"}
+Command duration or timeout: 9 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'LMTN202461', ip: '167.74.108.52', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_25'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.4.0, platform=WINDOWS, nativeEvents=true, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 383361ab-4346-4d05-bfe9-fe4094a207f0
+	at sun.reflect.GeneratedConstructorAccessor31.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.maax.businessmanager.util.TestBase.dynamicwait(TestBase.java:249)
+	at com.maax.businessmanager.common.provision_copy_defect_Test.Provisioncopy(provision_copy_defect_Test.java:89)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[contains(@id,'connection-working') and contains(@class,'iceOutConStatActv') and contains(@style,'visibility: visible')]"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'LMTN202461', ip: '167.74.108.52', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_25'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous5108139089750429172webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:133)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous5108139089750429172webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9650:3)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous5108139089750429172webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11635:16)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous5108139089750429172webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11640:7)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous5108139089750429172webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11582:5)
+
+Provisioncopy(com.maax.businessmanager.common.provision_copy_defect_Test)  Time elapsed: 30.769 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[contains(@id,'connection-working') and contains(@class,'iceOutConStatActv') and contains(@style,'visibility: visible')]"}
+Command duration or timeout: 8 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'LMTN202461', ip: '167.74.108.52', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_25'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.4.0, platform=WINDOWS, nativeEvents=true, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d081365e-d57b-49ce-acea-3ce690ee8a6e
+	at sun.reflect.GeneratedConstructorAccessor31.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.maax.businessmanager.util.TestBase.dynamicwait(TestBase.java:249)
+	at com.maax.businessmanager.common.provision_copy_defect_Test.Provisioncopy(provision_copy_defect_Test.java:89)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[contains(@id,'connection-working') and contains(@class,'iceOutConStatActv') and contains(@style,'visibility: visible')]"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'LMTN202461', ip: '167.74.108.52', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_25'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous3049790335337158708webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:133)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous3049790335337158708webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9650:3)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous3049790335337158708webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11635:16)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous3049790335337158708webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11640:7)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous3049790335337158708webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11582:5)
+
+Provisioncopy(com.maax.businessmanager.common.provision_copy_defect_Test)  Time elapsed: 31.447 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[contains(@id,'connection-working') and contains(@class,'iceOutConStatActv') and contains(@style,'visibility: visible')]"}
+Command duration or timeout: 9 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'LMTN202461', ip: '167.74.108.52', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_25'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.4.0, platform=WINDOWS, nativeEvents=true, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 2ca1ed05-0706-41fe-8e81-c0627fe4730f
+	at sun.reflect.GeneratedConstructorAccessor31.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.maax.businessmanager.util.TestBase.dynamicwait(TestBase.java:249)
+	at com.maax.businessmanager.common.provision_copy_defect_Test.Provisioncopy(provision_copy_defect_Test.java:89)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[contains(@id,'connection-working') and contains(@class,'iceOutConStatActv') and contains(@style,'visibility: visible')]"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'LMTN202461', ip: '167.74.108.52', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_25'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous8767221373210260351webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:133)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous8767221373210260351webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9650:3)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous8767221373210260351webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11635:16)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous8767221373210260351webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11640:7)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous8767221373210260351webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11582:5)
+
+Provisioncopy(com.maax.businessmanager.common.provision_copy_defect_Test)  Time elapsed: 38.743 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[contains(@id,'connection-working') and contains(@class,'iceOutConStatActv') and contains(@style,'visibility: visible')]"}
+Command duration or timeout: 7 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'LMTN202461', ip: '167.74.108.52', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_25'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.4.0, platform=WINDOWS, nativeEvents=true, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5e2378dd-f87e-4206-9caf-7e26583df0d0
+	at sun.reflect.GeneratedConstructorAccessor31.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.maax.businessmanager.util.TestBase.dynamicwait(TestBase.java:249)
+	at com.maax.businessmanager.common.provision_copy_defect_Test.Provisioncopy(provision_copy_defect_Test.java:89)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[contains(@id,'connection-working') and contains(@class,'iceOutConStatActv') and contains(@style,'visibility: visible')]"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'LMTN202461', ip: '167.74.108.52', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_25'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous3166982313200375990webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:133)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous3166982313200375990webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9650:3)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous3166982313200375990webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11635:16)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous3166982313200375990webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11640:7)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous3166982313200375990webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11582:5)
+

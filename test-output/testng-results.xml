@@ -1,123 +1,271 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="10" passed="10">
+<testng-results skipped="0" failed="6" total="6" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="109338" started-at="2015-02-17T20:43:54Z" finished-at="2015-02-17T20:45:43Z">
+  <suite name="Default suite" duration-ms="1992" started-at="2015-02-18T15:52:04Z" finished-at="2015-02-18T15:52:06Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="109338" started-at="2015-02-17T20:43:54Z" finished-at="2015-02-17T20:45:43Z">
-      <class name="com.maax.businessmanager.common.provision_copy_defect_Test">
-        <test-method status="PASS" signature="Provisioncopy(java.util.Hashtable)[pri:0, instance:com.maax.businessmanager.common.provision_copy_defect_Test@7a0ac6e3]" name="Provisioncopy" duration-ms="37032" started-at="2015-02-17T16:43:55Z" data-provider="SuiteCommontestdata" finished-at="2015-02-17T16:44:32Z">
+    <test name="Default test" duration-ms="1992" started-at="2015-02-18T15:52:04Z" finished-at="2015-02-18T15:52:06Z">
+      <class name="com.maax.businessmanager.common.sampleTest">
+        <test-method status="FAIL" signature="basicnavigation(java.util.Hashtable)[pri:0, instance:com.maax.businessmanager.common.sampleTest@49e4cb85]" name="basicnavigation" duration-ms="133" started-at="2015-02-18T11:52:05Z" data-provider="SuiteCommontestdata" finished-at="2015-02-18T11:52:06Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Successmess=Data Updated Successfully, LOB=Life, Username=bcchase, Result=, Runmode=Y, Benefit=Member Life, copypagecode=DEC3025, Password=Welcome1, copypagestatus=Inforce, copypagedesc=DEC3015DESC, Browser=Firefox}]]>
+                <![CDATA[{qual period dp=Days, Browser=Chrome, Password=Welcome1, HC=Medavie Blue Cross, DepTermcalDP=Exact, Username=bcchase, Code=AUTO1B, Waitingperiod=0, Result=, Term.Age=60, TermDatecal=Exact, Runmode=Y, SubCate=Student, StartDatecal=Exact, DepTerm age=22, Status=Inforce, Category=Child, Qual Period=10, Description=Sample Test, BOB=Group, WaitingperiodDP=Days}]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.maax.businessmanager.util.TestBase.checkrunmodes(TestBase.java:72)
+	at com.maax.businessmanager.common.sampleTest.basicnavigation(sampleTest.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Provisioncopy -->
-        <test-method status="PASS" signature="Provisioncopy(java.util.Hashtable)[pri:0, instance:com.maax.businessmanager.common.provision_copy_defect_Test@7a0ac6e3]" name="Provisioncopy" duration-ms="92044" started-at="2015-02-17T16:43:55Z" data-provider="SuiteCommontestdata" finished-at="2015-02-17T16:45:27Z">
+        </test-method> <!-- basicnavigation -->
+        <test-method status="FAIL" signature="basicnavigation(java.util.Hashtable)[pri:0, instance:com.maax.businessmanager.common.sampleTest@49e4cb85]" name="basicnavigation" duration-ms="150" started-at="2015-02-18T11:52:06Z" data-provider="SuiteCommontestdata" finished-at="2015-02-18T11:52:06Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Successmess=Data Updated Successfully, LOB=Income Replacement, Username=bcchase, Result=, Runmode=Y, Benefit=STD, copypagecode=DEC3025, Password=Welcome1, copypagestatus=Inforce, copypagedesc=DEC3015DESC, Browser=Firefox}]]>
+                <![CDATA[{qual period dp=Days, Browser=Chrome, Password=Welcome1, HC=Medavie Blue Cross, DepTermcalDP=Exact, Username=bcchase, Code=AUTO1C, Waitingperiod=0, Result=, Term.Age=60, TermDatecal=Exact, Runmode=Y, SubCate=Student, StartDatecal=Exact, DepTerm age=22, Status=Inforce, Category=Child, Qual Period=10, Description=Sample Test, BOB=Group, WaitingperiodDP=Days}]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.maax.businessmanager.util.TestBase.checkrunmodes(TestBase.java:72)
+	at com.maax.businessmanager.common.sampleTest.basicnavigation(sampleTest.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Provisioncopy -->
-        <test-method status="PASS" signature="Provisioncopy(java.util.Hashtable)[pri:0, instance:com.maax.businessmanager.common.provision_copy_defect_Test@7a0ac6e3]" name="Provisioncopy" duration-ms="48340" started-at="2015-02-17T16:43:55Z" data-provider="SuiteCommontestdata" finished-at="2015-02-17T16:44:43Z">
+        </test-method> <!-- basicnavigation -->
+        <test-method status="FAIL" signature="basicnavigation(java.util.Hashtable)[pri:0, instance:com.maax.businessmanager.common.sampleTest@49e4cb85]" name="basicnavigation" duration-ms="85" started-at="2015-02-18T11:52:06Z" data-provider="SuiteCommontestdata" finished-at="2015-02-18T11:52:06Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Successmess=Data Updated Successfully, LOB=AD&D, Username=bcchase, Result=, Runmode=Y, Benefit=Member AD&D, copypagecode=DEC3025, Password=Welcome1, copypagestatus=Inforce, copypagedesc=DEC3015DESC, Browser=Firefox}]]>
+                <![CDATA[{qual period dp=Days, Browser=Chrome, Password=Welcome1, HC=Medavie Blue Cross, DepTermcalDP=Exact, Username=bcchase, Code=AUTO1B, Waitingperiod=0, Result=, Term.Age=60, TermDatecal=Exact, Runmode=Y, SubCate=Student, StartDatecal=Exact, DepTerm age=22, Status=Inforce, Category=Child, Qual Period=10, Description=Sample Test, BOB=Group, WaitingperiodDP=Days}]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.maax.businessmanager.util.TestBase.checkrunmodes(TestBase.java:72)
+	at com.maax.businessmanager.common.sampleTest.basicnavigation(sampleTest.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Provisioncopy -->
-        <test-method status="PASS" signature="Provisioncopy(java.util.Hashtable)[pri:0, instance:com.maax.businessmanager.common.provision_copy_defect_Test@7a0ac6e3]" name="Provisioncopy" duration-ms="108240" started-at="2015-02-17T16:43:55Z" data-provider="SuiteCommontestdata" finished-at="2015-02-17T16:45:43Z">
+        </test-method> <!-- basicnavigation -->
+        <test-method status="FAIL" signature="basicnavigation(java.util.Hashtable)[pri:0, instance:com.maax.businessmanager.common.sampleTest@49e4cb85]" name="basicnavigation" duration-ms="109" started-at="2015-02-18T11:52:06Z" data-provider="SuiteCommontestdata" finished-at="2015-02-18T11:52:06Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Successmess=Data Updated Successfully, LOB=Income Replacement, Username=bcchase, Result=, Runmode=Y, Benefit=LTD, copypagecode=DEC3025, Password=Welcome1, copypagestatus=Inforce, copypagedesc=DEC3015DESC, Browser=Firefox}]]>
+                <![CDATA[{qual period dp=Days, Browser=Chrome, Password=Welcome1, HC=Medavie Blue Cross, DepTermcalDP=Exact, Username=bcchase, Code=AUTO1C, Waitingperiod=0, Result=, Term.Age=60, TermDatecal=Exact, Runmode=Y, SubCate=Student, StartDatecal=Exact, DepTerm age=22, Status=Inforce, Category=Child, Qual Period=10, Description=Sample Test, BOB=Group, WaitingperiodDP=Days}]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.maax.businessmanager.util.TestBase.checkrunmodes(TestBase.java:72)
+	at com.maax.businessmanager.common.sampleTest.basicnavigation(sampleTest.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Provisioncopy -->
-        <test-method status="PASS" signature="Provisioncopy(java.util.Hashtable)[pri:0, instance:com.maax.businessmanager.common.provision_copy_defect_Test@7a0ac6e3]" name="Provisioncopy" duration-ms="79814" started-at="2015-02-17T16:43:55Z" data-provider="SuiteCommontestdata" finished-at="2015-02-17T16:45:15Z">
+        </test-method> <!-- basicnavigation -->
+        <test-method status="FAIL" signature="basicnavigation(java.util.Hashtable)[pri:0, instance:com.maax.businessmanager.common.sampleTest@49e4cb85]" name="basicnavigation" duration-ms="138" started-at="2015-02-18T11:52:06Z" data-provider="SuiteCommontestdata" finished-at="2015-02-18T11:52:06Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Successmess=Data Updated Successfully, LOB=Life, Username=bcchase, Result=, Runmode=Y, Benefit=Opt Spousal Life, copypagecode=DEC3025, Password=Welcome1, copypagestatus=Inforce, copypagedesc=DEC3015DESC, Browser=Firefox}]]>
+                <![CDATA[{qual period dp=Days, Browser=Firefox, Password=Welcome1, HC=Medavie Blue Cross, DepTermcalDP=Exact, Username=bcchase, Code=AUTO1B, Waitingperiod=0, Result=, Term.Age=60, TermDatecal=Exact, Runmode=Y, SubCate=Student, StartDatecal=Exact, DepTerm age=22, Status=Inforce, Category=Child, Qual Period=10, Description=Sample Test, BOB=Group, WaitingperiodDP=Days}]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.maax.businessmanager.util.TestBase.checkrunmodes(TestBase.java:72)
+	at com.maax.businessmanager.common.sampleTest.basicnavigation(sampleTest.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Provisioncopy -->
-        <test-method status="PASS" signature="Provisioncopy(java.util.Hashtable)[pri:0, instance:com.maax.businessmanager.common.provision_copy_defect_Test@7a0ac6e3]" name="Provisioncopy" duration-ms="96466" started-at="2015-02-17T16:43:55Z" data-provider="SuiteCommontestdata" finished-at="2015-02-17T16:45:32Z">
+        </test-method> <!-- basicnavigation -->
+        <test-method status="FAIL" signature="basicnavigation(java.util.Hashtable)[pri:0, instance:com.maax.businessmanager.common.sampleTest@49e4cb85]" name="basicnavigation" duration-ms="121" started-at="2015-02-18T11:52:06Z" data-provider="SuiteCommontestdata" finished-at="2015-02-18T11:52:06Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Successmess=Data Updated Successfully, LOB=Life, Username=bcchase, Result=, Runmode=Y, Benefit=Optional Member Life, copypagecode=DEC3025, Password=Welcome1, copypagestatus=Inforce, copypagedesc=DEC3015DESC, Browser=Firefox}]]>
+                <![CDATA[{qual period dp=Days, Browser=Firefox, Password=Welcome1, HC=Medavie Blue Cross, DepTermcalDP=Exact, Username=bcchase, Code=AUTO1C, Waitingperiod=0, Result=, Term.Age=60, TermDatecal=Exact, Runmode=Y, SubCate=Student, StartDatecal=Exact, DepTerm age=22, Status=Inforce, Category=Child, Qual Period=10, Description=Sample Test, BOB=Group, WaitingperiodDP=Days}]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.maax.businessmanager.util.TestBase.checkrunmodes(TestBase.java:72)
+	at com.maax.businessmanager.common.sampleTest.basicnavigation(sampleTest.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Provisioncopy -->
-        <test-method status="PASS" signature="Provisioncopy(java.util.Hashtable)[pri:0, instance:com.maax.businessmanager.common.provision_copy_defect_Test@7a0ac6e3]" name="Provisioncopy" duration-ms="86241" started-at="2015-02-17T16:43:55Z" data-provider="SuiteCommontestdata" finished-at="2015-02-17T16:45:21Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Successmess=Data Updated Successfully, LOB=Life, Username=bcchase, Result=, Runmode=Y, Benefit=Dependent Life, copypagecode=DEC3025, Password=Welcome1, copypagestatus=Inforce, copypagedesc=DEC3015DESC, Browser=Firefox}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Provisioncopy -->
-        <test-method status="PASS" signature="Provisioncopy(java.util.Hashtable)[pri:0, instance:com.maax.businessmanager.common.provision_copy_defect_Test@7a0ac6e3]" name="Provisioncopy" duration-ms="62617" started-at="2015-02-17T16:43:55Z" data-provider="SuiteCommontestdata" finished-at="2015-02-17T16:44:58Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Successmess=Data Updated Successfully, LOB=AD&D, Username=bcchase, Result=, Runmode=Y, Benefit=Optional AD&D, copypagecode=DEC3025, Password=Welcome1, copypagestatus=Inforce, copypagedesc=DEC3015DESC, Browser=Firefox}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Provisioncopy -->
-        <test-method status="PASS" signature="Provisioncopy(java.util.Hashtable)[pri:0, instance:com.maax.businessmanager.common.provision_copy_defect_Test@7a0ac6e3]" name="Provisioncopy" duration-ms="54651" started-at="2015-02-17T16:43:55Z" data-provider="SuiteCommontestdata" finished-at="2015-02-17T16:44:50Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Successmess=Data Updated Successfully, LOB=Life, Username=bcchase, Result=, Runmode=Y, Benefit=Critical Illness, copypagecode=DEC3025, Password=Welcome1, copypagestatus=Inforce, copypagedesc=DEC3015DESC, Browser=Firefox}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Provisioncopy -->
-        <test-method status="PASS" signature="Provisioncopy(java.util.Hashtable)[pri:0, instance:com.maax.businessmanager.common.provision_copy_defect_Test@7a0ac6e3]" name="Provisioncopy" duration-ms="73307" started-at="2015-02-17T16:43:55Z" data-provider="SuiteCommontestdata" finished-at="2015-02-17T16:45:08Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Successmess=Data Updated Successfully, LOB=Life, Username=bcchase, Result=, Runmode=Y, Benefit=Optional Child Life, copypagecode=DEC3025, Password=Welcome1, copypagestatus=Inforce, copypagedesc=DEC3015DESC, Browser=Firefox}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Provisioncopy -->
-      </class> <!-- com.maax.businessmanager.common.provision_copy_defect_Test -->
+        </test-method> <!-- basicnavigation -->
+      </class> <!-- com.maax.businessmanager.common.sampleTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

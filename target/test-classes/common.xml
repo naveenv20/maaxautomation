@@ -4,7 +4,7 @@
 
 
 
-<test name="Test 2">
+<!--test name="Test 2">
     <classes>
         <class name="com.maax.businessmanager.common.sampleTest" ></class>  
     </classes>
@@ -12,6 +12,11 @@
 <test name="Test 3">
     <classes>
         <class name="com.maax.businessmanager.common.databasecheckTEST" ></class>  
+    </classes>
+</test-->
+<test name="Test 4">
+    <classes>
+        <class name="com.maax.businessmanager.common.provision_copy_defect_Test" ></class>  
     </classes>
 </test>
 

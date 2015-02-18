@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite hostname="LMTN202461" name="com.maax.businessmanager.common.sampleTest" tests="6" failures="0" timestamp="19 Jan 2015 18:49:49 GMT" time="54.92" errors="0">
-  <testcase name="basicnavigation" time="3.911" classname="com.maax.businessmanager.common.sampleTest">
+<testsuite hostname="LMTN202461" name="com.maax.businessmanager.common.sampleTest" tests="6" failures="0" timestamp="18 Feb 2015 15:55:29 GMT" time="37.201" errors="0">
+  <testcase name="basicnavigation" time="4.418" classname="com.maax.businessmanager.common.sampleTest">
     <skipped/>
   </testcase>
-  <testcase name="basicnavigation" time="4.396" classname="com.maax.businessmanager.common.sampleTest">
+  <testcase name="basicnavigation" time="2.563" classname="com.maax.businessmanager.common.sampleTest">
     <skipped/>
   </testcase>
-  <testcase name="basicnavigation" time="4.639" classname="com.maax.businessmanager.common.sampleTest">
+  <testcase name="basicnavigation" time="2.593" classname="com.maax.businessmanager.common.sampleTest">
     <skipped/>
   </testcase>
-  <testcase name="basicnavigation" time="7.464" classname="com.maax.businessmanager.common.sampleTest">
+  <testcase name="basicnavigation" time="2.564" classname="com.maax.businessmanager.common.sampleTest">
     <skipped/>
   </testcase>
-  <testcase name="basicnavigation" time="11.723" classname="com.maax.businessmanager.common.sampleTest">
+  <testcase name="basicnavigation" time="7.791" classname="com.maax.businessmanager.common.sampleTest">
     <skipped/>
   </testcase>
-  <testcase name="basicnavigation" time="54.059" classname="com.maax.businessmanager.common.sampleTest">
+  <testcase name="basicnavigation" time="15.947" classname="com.maax.businessmanager.common.sampleTest">
     <skipped/>
   </testcase>
 </testsuite>

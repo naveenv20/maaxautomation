@@ -5,7 +5,7 @@
     <classes>
       <class name="com.maax.businessmanager.common.sampleTest">
         <methods>
-          <include name="basicnavigation" invocation-numbers="3"/>
+          <include name="basicnavigation" invocation-numbers="0 1 2 3 4 5"/>
         </methods>
       </class> <!-- com.maax.businessmanager.common.sampleTest -->
     </classes>

@@ -8,7 +8,7 @@ public class TestDataProvider {
 
 	
 	
-	@DataProvider(name="SuiteCommontestdata",parallel=false)
+	@DataProvider(name="SuiteCommontestdata",parallel=true)
 	public static Object[][] getdata(Method m){
 		System.out.println(m.getName());
 		String suitename="Common";

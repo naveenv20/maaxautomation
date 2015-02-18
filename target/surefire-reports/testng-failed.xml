@@ -4,11 +4,11 @@
   <listeners>
     <listener class-name="com.maax.businessmanager.util.CustomListener"/>
   </listeners>
-  <test name="Test 2(failed)" preserve-order="false">
+  <test name="Test 4(failed)" preserve-order="false">
     <classes>
-      <class name="com.maax.businessmanager.common.sampleTest">
+      <class name="com.maax.businessmanager.common.provision_copy_defect_Test">
         <methods>
-          <include name="basicnavigation" invocation-numbers="0 3 2 5 4 1"/>
+          <include name="Provisioncopy"/>
         </methods>
       </class>
     </classes>

@@ -20,10 +20,11 @@ public class sampleTest extends TestBase{
 	public void basicnavigation(Hashtable<String, String>data){
 
 		 WebDriver d1=null;
+	
 		 //RemoteWebDriver d1=null;
-	//d1=init("basicnavigation", "Common",data,false);
-	d1=init("basicnavigation", "Common",data,true);
-		checkrunmodes("Common", "basicnavigation", data.get("Runmode"));
+	d1=init("basicnavigation", "Common",data,false);
+//	d1=init("basicnavigation", "Common",data,true);
+	 checkrunmodes("Common", "basicnavigation", data.get("Runmode"));	
 		APPLICATION_LOG.debug((data.get("Browser")));
 		
 		//openbrowsergrid(data.get("Browser"));
