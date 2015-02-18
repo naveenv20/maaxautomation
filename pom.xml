@@ -71,7 +71,15 @@
             <artifactId>xml-apis</artifactId>
             <version>1.4.01</version>
         </dependency>
-		
+<!--JDBC way of doing it, place the jar file in system and try to install that from maven-->		
+<dependency>
+    <groupId>com.oracle</groupId>
+    <artifactId>ojdbc</artifactId>
+    <version>14</version>
+    <scope>system</scope>
+    <systemPath>${basedir}/src/test/resources/ojdbc6.jar</systemPath> <!-- must match file name -->
+</dependency>
+
 
   </dependencies>
   
