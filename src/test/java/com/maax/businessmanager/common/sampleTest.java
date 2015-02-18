@@ -21,8 +21,8 @@ public class sampleTest extends TestBase{
 
 		 WebDriver d1=null;
 		 //RemoteWebDriver d1=null;
-	d1=init("basicnavigation", "Common",data,false);
-	//d1=init("basicnavigation", "Common",data,true);
+	//d1=init("basicnavigation", "Common",data,false);
+	d1=init("basicnavigation", "Common",data,true);
 		checkrunmodes("Common", "basicnavigation", data.get("Runmode"));
 		APPLICATION_LOG.debug((data.get("Browser")));
 		
@@ -55,7 +55,7 @@ public class sampleTest extends TestBase{
 		select("bookofbusinessdp", data.get("BOB"),d1);
 		type("agreementaddcodefield", data.get("Code"),d1);
 		/*
-		type("agreementaddcodefield",String.valueOf(Integer.parseInt(queryit())),d1);
+		type("agreementaddcodefield",String.valueOf(Integer.parseInt(queryit())+1),d1);
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {

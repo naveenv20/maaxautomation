@@ -1,4 +1,4 @@
-package com.maax.businessmanager.rough;
+package com.maax.businessmanager.common;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -7,9 +7,14 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class databasecheck {
 
-	public static void main(String[] args) {
+
+import org.testng.annotations.Test;
+
+public class databasecheckTEST {
+
+	@Test
+	public void dbtest(){
 		
 		//import the  sql package
 		//java.sql.*
@@ -22,7 +27,7 @@ public class databasecheck {
 		String username="bcjlbou";
 		String pass="TempPassword21";
 		//jdbc:oracle:thin:@10.156.157.237:1521:sgatest", "ppm_user","ppm_user"
-		System.out.println("Strat");
+		System.out.println("Start");
 		//trying the connection 
 		
 		try{
@@ -31,17 +36,12 @@ public class databasecheck {
 			conn=DriverManager.getConnection(url,username,pass);
 			//connection reference established
 			Statement stmt=conn.createStatement();
-			PreparedStatement pspmt= conn.prepareStatement("select * from ENABLERS.Agreement_Header where agreement_type=? and agreement_id in(select max(agreement_id) from ENABLERS.Agreement_Header where agreement_type=?)");
-			pspmt.setString(1, "64");
-			pspmt.setString(2, "64");
 			ResultSet rs=stmt.executeQuery("select * from ENABLERS.Agreement_Header where agreement_type=64 and agreement_id in(select max(agreement_id) from ENABLERS.Agreement_Header where agreement_type=64)");
-			ResultSet rs_o=pspmt.executeQuery();
 			//first row
 			rs.next();
-			rs_o.next();
 			//prints the first row name column value
 			System.out.println(rs.getString("AGREEMENT_ID"));
-			System.out.println(rs_o.getString("AGREEMENT_ID"));
+			
 			
 		}catch(Exception e){
 		System.out.println("error");
