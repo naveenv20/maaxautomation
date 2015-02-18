@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test 2</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>10/3/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/6</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Jan 06 14:16:31 AST 2015</td>
+<td>Started on:</td><td>Mon Jan 19 14:48:54 AST 2015</td>
 </tr>
-<tr><td>Total time:</td><td>316 seconds (316755 ms)</td>
+<tr><td>Total time:</td><td>54 seconds (54920 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,71 +67,26 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.maax.businessmanager.common.provision_copy_defect_Test.Provisioncopy()'><b>Provisioncopy</b><br>Test class: com.maax.businessmanager.common.provision_copy_defect_Test<br>Parameters: {Successmess=Data Updated Successfully, LOB=Income Replacement, Username=bcchase, Result=, Runmode=Y, Benefit=STD, copypagecode=DEC3024, Password=Welcome1, copypagestatus=Inforce, copypagedesc=DEC3015DESC, Browser=Firefox}</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@id,&apos;connection-working&apos;) and contains(@class,&apos;iceOutConStatActv&apos;) and contains(@style,&apos;visibility: visible&apos;)]&quot;}
-Command duration or timeout: 10 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;LMTN202461&apos;, ip: &apos;167.74.108.52&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.2.0, platform=WINDOWS, nativeEvents=true, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 1c172864-afc4-4907-af4c-d1fd7d6ddb37
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at com.maax.businessmanager.util.TestBase.dynamicwait(TestBase.java:248)
-	at com.maax.businessmanager.common.provision_copy_defect_Test.Provisioncopy(provision_copy_defect_Test.java:89)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:178)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:96)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@id,&apos;connection-working&apos;) and contains(@class,&apos;iceOutConStatActv&apos;) and contains(@style,&apos;visibility: visible&apos;)]&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;LMTN202461&apos;, ip: &apos;167.74.108.52&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous1926278199757334052webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:133)
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous1926278199757334052webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9650:3)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous1926278199757334052webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11635:16)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous1926278199757334052webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11640:7)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous1926278199757334052webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11582:5)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1527086220", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1527086220'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[contains(@id,'connection-working') and contains(@class,'iceOutConStatActv') and contains(@style,'visibility: visible')]"}
-Command duration or timeout: 10 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
-System info: host: 'LMTN202461', ip: '167.74.108.52', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_25'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.2.0, platform=WINDOWS, nativeEvents=true, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 1c172864-afc4-4907-af4c-d1fd7d6ddb37
-	at sun.reflect.GeneratedConstructorAccessor31.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at com.maax.businessmanager.util.TestBase.dynamicwait(TestBase.java:248)
-	at com.maax.businessmanager.common.provision_copy_defect_Test.Provisioncopy(provision_copy_defect_Test.java:89)
+<td title='com.maax.businessmanager.common.sampleTest.basicnavigation()'><b>basicnavigation</b><br>Test class: com.maax.businessmanager.common.sampleTest<br>Parameters: {qual period dp=Days, Browser=Chrome, Password=Welcome1, HC=Medavie Blue Cross, DepTermcalDP=Exact, Username=bcchase, Code=AUTO1B, Waitingperiod=0, Result=, Term.Age=60, TermDatecal=Exact, Runmode=Y, SubCate=Student, StartDatecal=Exact, DepTerm age=22, Status=Inforce, Category=Child, Qual Period=10, Description=Sample Test, BOB=Group, WaitingperiodDP=Days}</td>
+<td><div><pre>org.testng.SkipException: Test case is configured as No
+	at com.maax.businessmanager.util.TestBase.checkrunmodes(TestBase.java:72)
+	at com.maax.businessmanager.common.sampleTest.basicnavigation(sampleTest.java:26)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 9 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2000393970", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2000393970'><pre>org.testng.SkipException: Test case is configured as No
+	at com.maax.businessmanager.util.TestBase.checkrunmodes(TestBase.java:72)
+	at com.maax.businessmanager.common.sampleTest.basicnavigation(sampleTest.java:26)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -139,105 +94,28 @@ Session ID: 1c172864-afc4-4907-af4c-d1fd7d6ddb37
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
-	at org.testng.TestRunner.privateRun(TestRunner.java:757)
-	at org.testng.TestRunner.run(TestRunner.java:608)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1158)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1154)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1083)
-	at org.testng.TestNG.run(TestNG.java:999)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:178)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:96)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:483)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[contains(@id,'connection-working') and contains(@class,'iceOutConStatActv') and contains(@style,'visibility: visible')]"}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
-System info: host: 'LMTN202461', ip: '167.74.108.52', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_25'
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous1926278199757334052webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:133)
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous1926278199757334052webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9650:3)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous1926278199757334052webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11635:16)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous1926278199757334052webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11640:7)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous1926278199757334052webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11582:5)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
 </pre></div></td>
-<td>29</td>
-<td>com.maax.businessmanager.common.provision_copy_defect_Test@7225790e</td></tr>
+<td>3</td>
+<td>com.maax.businessmanager.common.sampleTest@39fb3ab6</td></tr>
 <tr>
-<td title='com.maax.businessmanager.common.provision_copy_defect_Test.Provisioncopy()'><b>Provisioncopy</b><br>Test class: com.maax.businessmanager.common.provision_copy_defect_Test<br>Parameters: {Successmess=Data Updated Successfully, LOB=AD&D, Username=bcchase, Result=, Runmode=Y, Benefit=Optional AD&D, copypagecode=DEC3024, Password=Welcome1, copypagestatus=Inforce, copypagedesc=DEC3015DESC, Browser=Firefox}</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@id,&apos;connection-working&apos;) and contains(@class,&apos;iceOutConStatActv&apos;) and contains(@style,&apos;visibility: visible&apos;)]&quot;}
-Command duration or timeout: 8 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;LMTN202461&apos;, ip: &apos;167.74.108.52&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.2.0, platform=WINDOWS, nativeEvents=true, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 80cd566b-1fa8-4b60-bcce-01898f1cea6c
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at com.maax.businessmanager.util.TestBase.dynamicwait(TestBase.java:248)
-	at com.maax.businessmanager.common.provision_copy_defect_Test.Provisioncopy(provision_copy_defect_Test.java:89)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:178)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:96)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@id,&apos;connection-working&apos;) and contains(@class,&apos;iceOutConStatActv&apos;) and contains(@style,&apos;visibility: visible&apos;)]&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;LMTN202461&apos;, ip: &apos;167.74.108.52&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous5759456224517786857webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:133)
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous5759456224517786857webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9650:3)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous5759456224517786857webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11635:16)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous5759456224517786857webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11640:7)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous5759456224517786857webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11582:5)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1107579932", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1107579932'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[contains(@id,'connection-working') and contains(@class,'iceOutConStatActv') and contains(@style,'visibility: visible')]"}
-Command duration or timeout: 8 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
-System info: host: 'LMTN202461', ip: '167.74.108.52', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_25'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.2.0, platform=WINDOWS, nativeEvents=true, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 80cd566b-1fa8-4b60-bcce-01898f1cea6c
-	at sun.reflect.GeneratedConstructorAccessor31.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at com.maax.businessmanager.util.TestBase.dynamicwait(TestBase.java:248)
-	at com.maax.businessmanager.common.provision_copy_defect_Test.Provisioncopy(provision_copy_defect_Test.java:89)
+<td title='com.maax.businessmanager.common.sampleTest.basicnavigation()'><b>basicnavigation</b><br>Test class: com.maax.businessmanager.common.sampleTest<br>Parameters: {qual period dp=Days, Browser=Chrome, Password=Welcome1, HC=Medavie Blue Cross, DepTermcalDP=Exact, Username=bcchase, Code=AUTO1C, Waitingperiod=0, Result=, Term.Age=60, TermDatecal=Exact, Runmode=Y, SubCate=Student, StartDatecal=Exact, DepTerm age=22, Status=Inforce, Category=Child, Qual Period=10, Description=Sample Test, BOB=Group, WaitingperiodDP=Days}</td>
+<td><div><pre>org.testng.SkipException: Test case is configured as No
+	at com.maax.businessmanager.util.TestBase.checkrunmodes(TestBase.java:72)
+	at com.maax.businessmanager.common.sampleTest.basicnavigation(sampleTest.java:26)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 9 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1509133595", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1509133595'><pre>org.testng.SkipException: Test case is configured as No
+	at com.maax.businessmanager.util.TestBase.checkrunmodes(TestBase.java:72)
+	at com.maax.businessmanager.common.sampleTest.basicnavigation(sampleTest.java:26)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -245,105 +123,28 @@ Session ID: 80cd566b-1fa8-4b60-bcce-01898f1cea6c
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
-	at org.testng.TestRunner.privateRun(TestRunner.java:757)
-	at org.testng.TestRunner.run(TestRunner.java:608)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1158)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1154)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1083)
-	at org.testng.TestNG.run(TestNG.java:999)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:178)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:96)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:483)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[contains(@id,'connection-working') and contains(@class,'iceOutConStatActv') and contains(@style,'visibility: visible')]"}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
-System info: host: 'LMTN202461', ip: '167.74.108.52', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_25'
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous5759456224517786857webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:133)
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous5759456224517786857webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9650:3)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous5759456224517786857webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11635:16)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous5759456224517786857webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11640:7)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous5759456224517786857webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11582:5)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
 </pre></div></td>
-<td>29</td>
-<td>com.maax.businessmanager.common.provision_copy_defect_Test@7225790e</td></tr>
+<td>4</td>
+<td>com.maax.businessmanager.common.sampleTest@39fb3ab6</td></tr>
 <tr>
-<td title='com.maax.businessmanager.common.provision_copy_defect_Test.Provisioncopy()'><b>Provisioncopy</b><br>Test class: com.maax.businessmanager.common.provision_copy_defect_Test<br>Parameters: {Successmess=Data Updated Successfully, LOB=Life, Username=bcchase, Result=, Runmode=Y, Benefit=Optional Member Life, copypagecode=DEC3024, Password=Welcome1, copypagestatus=Inforce, copypagedesc=DEC3015DESC, Browser=Firefox}</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@id,&apos;connection-working&apos;) and contains(@class,&apos;iceOutConStatActv&apos;) and contains(@style,&apos;visibility: visible&apos;)]&quot;}
-Command duration or timeout: 7 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;LMTN202461&apos;, ip: &apos;167.74.108.52&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.2.0, platform=WINDOWS, nativeEvents=true, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: d1e5b8cf-907a-4696-a5a5-c41caa700ece
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at com.maax.businessmanager.util.TestBase.dynamicwait(TestBase.java:248)
-	at com.maax.businessmanager.common.provision_copy_defect_Test.Provisioncopy(provision_copy_defect_Test.java:89)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:178)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:96)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@id,&apos;connection-working&apos;) and contains(@class,&apos;iceOutConStatActv&apos;) and contains(@style,&apos;visibility: visible&apos;)]&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;LMTN202461&apos;, ip: &apos;167.74.108.52&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous5851109510279210777webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:133)
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous5851109510279210777webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9650:3)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous5851109510279210777webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11635:16)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous5851109510279210777webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11640:7)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous5851109510279210777webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11582:5)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1004430079", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1004430079'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[contains(@id,'connection-working') and contains(@class,'iceOutConStatActv') and contains(@style,'visibility: visible')]"}
-Command duration or timeout: 7 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
-System info: host: 'LMTN202461', ip: '167.74.108.52', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_25'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.2.0, platform=WINDOWS, nativeEvents=true, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: d1e5b8cf-907a-4696-a5a5-c41caa700ece
-	at sun.reflect.GeneratedConstructorAccessor31.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at com.maax.businessmanager.util.TestBase.dynamicwait(TestBase.java:248)
-	at com.maax.businessmanager.common.provision_copy_defect_Test.Provisioncopy(provision_copy_defect_Test.java:89)
+<td title='com.maax.businessmanager.common.sampleTest.basicnavigation()'><b>basicnavigation</b><br>Test class: com.maax.businessmanager.common.sampleTest<br>Parameters: {qual period dp=Days, Browser=Chrome, Password=Welcome1, HC=Medavie Blue Cross, DepTermcalDP=Exact, Username=bcchase, Code=AUTO1B, Waitingperiod=0, Result=, Term.Age=60, TermDatecal=Exact, Runmode=Y, SubCate=Student, StartDatecal=Exact, DepTerm age=22, Status=Inforce, Category=Child, Qual Period=10, Description=Sample Test, BOB=Group, WaitingperiodDP=Days}</td>
+<td><div><pre>org.testng.SkipException: Test case is configured as No
+	at com.maax.businessmanager.util.TestBase.checkrunmodes(TestBase.java:72)
+	at com.maax.businessmanager.common.sampleTest.basicnavigation(sampleTest.java:26)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 9 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace381806214", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace381806214'><pre>org.testng.SkipException: Test case is configured as No
+	at com.maax.businessmanager.util.TestBase.checkrunmodes(TestBase.java:72)
+	at com.maax.businessmanager.common.sampleTest.basicnavigation(sampleTest.java:26)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -351,90 +152,102 @@ Session ID: d1e5b8cf-907a-4696-a5a5-c41caa700ece
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
-	at org.testng.TestRunner.privateRun(TestRunner.java:757)
-	at org.testng.TestRunner.run(TestRunner.java:608)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1158)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1154)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1083)
-	at org.testng.TestNG.run(TestNG.java:999)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:178)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:96)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>4</td>
+<td>com.maax.businessmanager.common.sampleTest@39fb3ab6</td></tr>
+<tr>
+<td title='com.maax.businessmanager.common.sampleTest.basicnavigation()'><b>basicnavigation</b><br>Test class: com.maax.businessmanager.common.sampleTest<br>Parameters: {qual period dp=Days, Browser=Firefox, Password=Welcome1, HC=Medavie Blue Cross, DepTermcalDP=Exact, Username=bcchase, Code=AUTO1C, Waitingperiod=0, Result=, Term.Age=60, TermDatecal=Exact, Runmode=Y, SubCate=Student, StartDatecal=Exact, DepTerm age=22, Status=Inforce, Category=Child, Qual Period=10, Description=Sample Test, BOB=Group, WaitingperiodDP=Days}</td>
+<td><div><pre>org.testng.SkipException: Test case is configured as No
+	at com.maax.businessmanager.util.TestBase.checkrunmodes(TestBase.java:72)
+	at com.maax.businessmanager.common.sampleTest.basicnavigation(sampleTest.java:26)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 9 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1638501507", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1638501507'><pre>org.testng.SkipException: Test case is configured as No
+	at com.maax.businessmanager.util.TestBase.checkrunmodes(TestBase.java:72)
+	at com.maax.businessmanager.common.sampleTest.basicnavigation(sampleTest.java:26)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:483)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[contains(@id,'connection-working') and contains(@class,'iceOutConStatActv') and contains(@style,'visibility: visible')]"}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
-System info: host: 'LMTN202461', ip: '167.74.108.52', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_25'
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous5851109510279210777webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:133)
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous5851109510279210777webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9650:3)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous5851109510279210777webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11635:16)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous5851109510279210777webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11640:7)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous5851109510279210777webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11582:5)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
 </pre></div></td>
-<td>30</td>
-<td>com.maax.businessmanager.common.provision_copy_defect_Test@7225790e</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
+<td>7</td>
+<td>com.maax.businessmanager.common.sampleTest@39fb3ab6</td></tr>
 <tr>
-<td title='com.maax.businessmanager.common.provision_copy_defect_Test.Provisioncopy()'><b>Provisioncopy</b><br>Test class: com.maax.businessmanager.common.provision_copy_defect_Test<br>Parameters: {Successmess=Data Updated Successfully, LOB=Life, Username=bcchase, Result=, Runmode=Y, Benefit=Member Life, copypagecode=DEC3024, Password=Welcome1, copypagestatus=Inforce, copypagedesc=DEC3015DESC, Browser=Firefox}</td>
-<td></td>
-<td>34</td>
-<td>com.maax.businessmanager.common.provision_copy_defect_Test@7225790e</td></tr>
+<td title='com.maax.businessmanager.common.sampleTest.basicnavigation()'><b>basicnavigation</b><br>Test class: com.maax.businessmanager.common.sampleTest<br>Parameters: {qual period dp=Days, Browser=Firefox, Password=Welcome1, HC=Medavie Blue Cross, DepTermcalDP=Exact, Username=bcchase, Code=AUTO1B, Waitingperiod=0, Result=, Term.Age=60, TermDatecal=Exact, Runmode=Y, SubCate=Student, StartDatecal=Exact, DepTerm age=22, Status=Inforce, Category=Child, Qual Period=10, Description=Sample Test, BOB=Group, WaitingperiodDP=Days}</td>
+<td><div><pre>org.testng.SkipException: Test case is configured as No
+	at com.maax.businessmanager.util.TestBase.checkrunmodes(TestBase.java:72)
+	at com.maax.businessmanager.common.sampleTest.basicnavigation(sampleTest.java:26)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 9 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace130449066", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace130449066'><pre>org.testng.SkipException: Test case is configured as No
+	at com.maax.businessmanager.util.TestBase.checkrunmodes(TestBase.java:72)
+	at com.maax.businessmanager.common.sampleTest.basicnavigation(sampleTest.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>11</td>
+<td>com.maax.businessmanager.common.sampleTest@39fb3ab6</td></tr>
 <tr>
-<td title='com.maax.businessmanager.common.provision_copy_defect_Test.Provisioncopy()'><b>Provisioncopy</b><br>Test class: com.maax.businessmanager.common.provision_copy_defect_Test<br>Parameters: {Successmess=Data Updated Successfully, LOB=AD&D, Username=bcchase, Result=, Runmode=Y, Benefit=Member AD&D, copypagecode=DEC3024, Password=Welcome1, copypagestatus=Inforce, copypagedesc=DEC3015DESC, Browser=Firefox}</td>
-<td></td>
-<td>32</td>
-<td>com.maax.businessmanager.common.provision_copy_defect_Test@7225790e</td></tr>
-<tr>
-<td title='com.maax.businessmanager.common.provision_copy_defect_Test.Provisioncopy()'><b>Provisioncopy</b><br>Test class: com.maax.businessmanager.common.provision_copy_defect_Test<br>Parameters: {Successmess=Data Updated Successfully, LOB=Income Replacement, Username=bcchase, Result=, Runmode=Y, Benefit=LTD, copypagecode=DEC3024, Password=Welcome1, copypagestatus=Inforce, copypagedesc=DEC3015DESC, Browser=Firefox}</td>
-<td></td>
-<td>32</td>
-<td>com.maax.businessmanager.common.provision_copy_defect_Test@7225790e</td></tr>
-<tr>
-<td title='com.maax.businessmanager.common.provision_copy_defect_Test.Provisioncopy()'><b>Provisioncopy</b><br>Test class: com.maax.businessmanager.common.provision_copy_defect_Test<br>Parameters: {Successmess=Data Updated Successfully, LOB=Life, Username=bcchase, Result=, Runmode=Y, Benefit=Opt Spousal Life, copypagecode=DEC3024, Password=Welcome1, copypagestatus=Inforce, copypagedesc=DEC3015DESC, Browser=Firefox}</td>
-<td></td>
-<td>31</td>
-<td>com.maax.businessmanager.common.provision_copy_defect_Test@7225790e</td></tr>
-<tr>
-<td title='com.maax.businessmanager.common.provision_copy_defect_Test.Provisioncopy()'><b>Provisioncopy</b><br>Test class: com.maax.businessmanager.common.provision_copy_defect_Test<br>Parameters: {Successmess=Data Updated Successfully, LOB=Life, Username=bcchase, Result=, Runmode=Y, Benefit=Dependent Life, copypagecode=DEC3024, Password=Welcome1, copypagestatus=Inforce, copypagedesc=DEC3015DESC, Browser=Firefox}</td>
-<td></td>
-<td>31</td>
-<td>com.maax.businessmanager.common.provision_copy_defect_Test@7225790e</td></tr>
-<tr>
-<td title='com.maax.businessmanager.common.provision_copy_defect_Test.Provisioncopy()'><b>Provisioncopy</b><br>Test class: com.maax.businessmanager.common.provision_copy_defect_Test<br>Parameters: {Successmess=Data Updated Successfully, LOB=Life, Username=bcchase, Result=, Runmode=Y, Benefit=Optional Child Life, copypagecode=DEC3024, Password=Welcome1, copypagestatus=Inforce, copypagedesc=DEC3015DESC, Browser=Firefox}</td>
-<td></td>
-<td>31</td>
-<td>com.maax.businessmanager.common.provision_copy_defect_Test@7225790e</td></tr>
-<tr>
-<td title='com.maax.businessmanager.common.provision_copy_defect_Test.Provisioncopy()'><b>Provisioncopy</b><br>Test class: com.maax.businessmanager.common.provision_copy_defect_Test<br>Parameters: {Successmess=Data Updated Successfully, LOB=Life, Username=bcchase, Result=, Runmode=Y, Benefit=Critical Illness, copypagecode=DEC3024, Password=Welcome1, copypagestatus=Inforce, copypagedesc=DEC3015DESC, Browser=Firefox}</td>
-<td></td>
-<td>31</td>
-<td>com.maax.businessmanager.common.provision_copy_defect_Test@7225790e</td></tr>
+<td title='com.maax.businessmanager.common.sampleTest.basicnavigation()'><b>basicnavigation</b><br>Test class: com.maax.businessmanager.common.sampleTest<br>Parameters: {qual period dp=Days, Browser=Chrome, Password=Welcome1, HC=Medavie Blue Cross, DepTermcalDP=Exact, Username=bcchase, Code=AUTO1C, Waitingperiod=0, Result=, Term.Age=60, TermDatecal=Exact, Runmode=Y, SubCate=Student, StartDatecal=Exact, DepTerm age=22, Status=Inforce, Category=Child, Qual Period=10, Description=Sample Test, BOB=Group, WaitingperiodDP=Days}</td>
+<td><div><pre>org.testng.SkipException: Test case is configured as No
+	at com.maax.businessmanager.util.TestBase.checkrunmodes(TestBase.java:72)
+	at com.maax.businessmanager.common.sampleTest.basicnavigation(sampleTest.java:26)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 9 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1723556757", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1723556757'><pre>org.testng.SkipException: Test case is configured as No
+	at com.maax.businessmanager.util.TestBase.checkrunmodes(TestBase.java:72)
+	at com.maax.businessmanager.common.sampleTest.basicnavigation(sampleTest.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>54</td>
+<td>com.maax.businessmanager.common.sampleTest@39fb3ab6</td></tr>
 </table><p>
 </body>
 </html>

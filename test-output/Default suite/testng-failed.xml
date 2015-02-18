@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.maax.businessmanager.common.provision_copy_defect_Test">
+      <class name="com.maax.businessmanager.common.sampleTest">
         <methods>
-          <include name="Provisioncopy" invocation-numbers="0"/>
+          <include name="basicnavigation" invocation-numbers="3"/>
         </methods>
-      </class> <!-- com.maax.businessmanager.common.provision_copy_defect_Test -->
+      </class> <!-- com.maax.businessmanager.common.sampleTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

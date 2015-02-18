@@ -1,50 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" total="10" passed="10">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="142553" started-at="2014-12-30T17:55:50Z" finished-at="2014-12-30T17:58:12Z">
+  <suite name="Default suite" duration-ms="109338" started-at="2015-02-17T20:43:54Z" finished-at="2015-02-17T20:45:43Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="142553" started-at="2014-12-30T17:55:50Z" finished-at="2014-12-30T17:58:12Z">
+    <test name="Default test" duration-ms="109338" started-at="2015-02-17T20:43:54Z" finished-at="2015-02-17T20:45:43Z">
       <class name="com.maax.businessmanager.common.provision_copy_defect_Test">
-        <test-method status="PASS" signature="Provisioncopy(java.util.Hashtable)[pri:0, instance:com.maax.businessmanager.common.provision_copy_defect_Test@7a0ac6e3]" name="Provisioncopy" duration-ms="129341" started-at="2014-12-30T13:55:50Z" data-provider="SuiteCommontestdata" finished-at="2014-12-30T13:58:00Z">
+        <test-method status="PASS" signature="Provisioncopy(java.util.Hashtable)[pri:0, instance:com.maax.businessmanager.common.provision_copy_defect_Test@7a0ac6e3]" name="Provisioncopy" duration-ms="37032" started-at="2015-02-17T16:43:55Z" data-provider="SuiteCommontestdata" finished-at="2015-02-17T16:44:32Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Successmess=Data Updated Successfully, LOB=Income Replacement, Username=bcchase, Result=, Runmode=Y, Benefit=STD, copypagecode=DEC3016, Password=Welcome1, copypagestatus=Inforce, copypagedesc=DEC3015DESC, Browser=Firefox}]]>
+                <![CDATA[{Successmess=Data Updated Successfully, LOB=Life, Username=bcchase, Result=, Runmode=Y, Benefit=Member Life, copypagecode=DEC3025, Password=Welcome1, copypagestatus=Inforce, copypagedesc=DEC3015DESC, Browser=Firefox}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Provisioncopy -->
-        <test-method status="PASS" signature="Provisioncopy(java.util.Hashtable)[pri:0, instance:com.maax.businessmanager.common.provision_copy_defect_Test@7a0ac6e3]" name="Provisioncopy" duration-ms="3818" started-at="2014-12-30T13:58:00Z" data-provider="SuiteCommontestdata" finished-at="2014-12-30T13:58:04Z">
+        <test-method status="PASS" signature="Provisioncopy(java.util.Hashtable)[pri:0, instance:com.maax.businessmanager.common.provision_copy_defect_Test@7a0ac6e3]" name="Provisioncopy" duration-ms="92044" started-at="2015-02-17T16:43:55Z" data-provider="SuiteCommontestdata" finished-at="2015-02-17T16:45:27Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Successmess=Data Updated Successfully, LOB=Life, Username=bcchase, Result=, Runmode=N, Benefit=Member Life, copypagecode=DEC3016, Password=Welcome1, copypagestatus=Inforce, copypagedesc=DEC3015DESC, Browser=Firefox}]]>
+                <![CDATA[{Successmess=Data Updated Successfully, LOB=Income Replacement, Username=bcchase, Result=, Runmode=Y, Benefit=STD, copypagecode=DEC3025, Password=Welcome1, copypagestatus=Inforce, copypagedesc=DEC3015DESC, Browser=Firefox}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Provisioncopy -->
-        <test-method status="PASS" signature="Provisioncopy(java.util.Hashtable)[pri:0, instance:com.maax.businessmanager.common.provision_copy_defect_Test@7a0ac6e3]" name="Provisioncopy" duration-ms="4457" started-at="2014-12-30T13:58:04Z" data-provider="SuiteCommontestdata" finished-at="2014-12-30T13:58:08Z">
+        <test-method status="PASS" signature="Provisioncopy(java.util.Hashtable)[pri:0, instance:com.maax.businessmanager.common.provision_copy_defect_Test@7a0ac6e3]" name="Provisioncopy" duration-ms="48340" started-at="2015-02-17T16:43:55Z" data-provider="SuiteCommontestdata" finished-at="2015-02-17T16:44:43Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Successmess=Data Updated Successfully, LOB=AD & D, Username=bcchase, Result=, Runmode=N, Benefit=Member AD & D, copypagecode=DEC3016, Password=Welcome1, copypagestatus=Inforce, copypagedesc=DEC3015DESC, Browser=Firefox}]]>
+                <![CDATA[{Successmess=Data Updated Successfully, LOB=AD&D, Username=bcchase, Result=, Runmode=Y, Benefit=Member AD&D, copypagecode=DEC3025, Password=Welcome1, copypagestatus=Inforce, copypagedesc=DEC3015DESC, Browser=Firefox}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Provisioncopy -->
-        <test-method status="PASS" signature="Provisioncopy(java.util.Hashtable)[pri:0, instance:com.maax.businessmanager.common.provision_copy_defect_Test@7a0ac6e3]" name="Provisioncopy" duration-ms="4116" started-at="2014-12-30T13:58:08Z" data-provider="SuiteCommontestdata" finished-at="2014-12-30T13:58:12Z">
+        <test-method status="PASS" signature="Provisioncopy(java.util.Hashtable)[pri:0, instance:com.maax.businessmanager.common.provision_copy_defect_Test@7a0ac6e3]" name="Provisioncopy" duration-ms="108240" started-at="2015-02-17T16:43:55Z" data-provider="SuiteCommontestdata" finished-at="2015-02-17T16:45:43Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Successmess=Data Updated Successfully, LOB=Health & Dental, Username=bcchase, Result=, Runmode=N, Benefit=Dental, copypagecode=DEC3016, Password=Welcome1, copypagestatus=Inforce, copypagedesc=DEC3015DESC, Browser=Firefox}]]>
+                <![CDATA[{Successmess=Data Updated Successfully, LOB=Income Replacement, Username=bcchase, Result=, Runmode=Y, Benefit=LTD, copypagecode=DEC3025, Password=Welcome1, copypagestatus=Inforce, copypagedesc=DEC3015DESC, Browser=Firefox}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Provisioncopy -->
+        <test-method status="PASS" signature="Provisioncopy(java.util.Hashtable)[pri:0, instance:com.maax.businessmanager.common.provision_copy_defect_Test@7a0ac6e3]" name="Provisioncopy" duration-ms="79814" started-at="2015-02-17T16:43:55Z" data-provider="SuiteCommontestdata" finished-at="2015-02-17T16:45:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Successmess=Data Updated Successfully, LOB=Life, Username=bcchase, Result=, Runmode=Y, Benefit=Opt Spousal Life, copypagecode=DEC3025, Password=Welcome1, copypagestatus=Inforce, copypagedesc=DEC3015DESC, Browser=Firefox}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Provisioncopy -->
+        <test-method status="PASS" signature="Provisioncopy(java.util.Hashtable)[pri:0, instance:com.maax.businessmanager.common.provision_copy_defect_Test@7a0ac6e3]" name="Provisioncopy" duration-ms="96466" started-at="2015-02-17T16:43:55Z" data-provider="SuiteCommontestdata" finished-at="2015-02-17T16:45:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Successmess=Data Updated Successfully, LOB=Life, Username=bcchase, Result=, Runmode=Y, Benefit=Optional Member Life, copypagecode=DEC3025, Password=Welcome1, copypagestatus=Inforce, copypagedesc=DEC3015DESC, Browser=Firefox}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Provisioncopy -->
+        <test-method status="PASS" signature="Provisioncopy(java.util.Hashtable)[pri:0, instance:com.maax.businessmanager.common.provision_copy_defect_Test@7a0ac6e3]" name="Provisioncopy" duration-ms="86241" started-at="2015-02-17T16:43:55Z" data-provider="SuiteCommontestdata" finished-at="2015-02-17T16:45:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Successmess=Data Updated Successfully, LOB=Life, Username=bcchase, Result=, Runmode=Y, Benefit=Dependent Life, copypagecode=DEC3025, Password=Welcome1, copypagestatus=Inforce, copypagedesc=DEC3015DESC, Browser=Firefox}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Provisioncopy -->
+        <test-method status="PASS" signature="Provisioncopy(java.util.Hashtable)[pri:0, instance:com.maax.businessmanager.common.provision_copy_defect_Test@7a0ac6e3]" name="Provisioncopy" duration-ms="62617" started-at="2015-02-17T16:43:55Z" data-provider="SuiteCommontestdata" finished-at="2015-02-17T16:44:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Successmess=Data Updated Successfully, LOB=AD&D, Username=bcchase, Result=, Runmode=Y, Benefit=Optional AD&D, copypagecode=DEC3025, Password=Welcome1, copypagestatus=Inforce, copypagedesc=DEC3015DESC, Browser=Firefox}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Provisioncopy -->
+        <test-method status="PASS" signature="Provisioncopy(java.util.Hashtable)[pri:0, instance:com.maax.businessmanager.common.provision_copy_defect_Test@7a0ac6e3]" name="Provisioncopy" duration-ms="54651" started-at="2015-02-17T16:43:55Z" data-provider="SuiteCommontestdata" finished-at="2015-02-17T16:44:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Successmess=Data Updated Successfully, LOB=Life, Username=bcchase, Result=, Runmode=Y, Benefit=Critical Illness, copypagecode=DEC3025, Password=Welcome1, copypagestatus=Inforce, copypagedesc=DEC3015DESC, Browser=Firefox}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Provisioncopy -->
+        <test-method status="PASS" signature="Provisioncopy(java.util.Hashtable)[pri:0, instance:com.maax.businessmanager.common.provision_copy_defect_Test@7a0ac6e3]" name="Provisioncopy" duration-ms="73307" started-at="2015-02-17T16:43:55Z" data-provider="SuiteCommontestdata" finished-at="2015-02-17T16:45:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Successmess=Data Updated Successfully, LOB=Life, Username=bcchase, Result=, Runmode=Y, Benefit=Optional Child Life, copypagecode=DEC3025, Password=Welcome1, copypagestatus=Inforce, copypagedesc=DEC3015DESC, Browser=Firefox}]]>
               </value>
             </param>
           </params>

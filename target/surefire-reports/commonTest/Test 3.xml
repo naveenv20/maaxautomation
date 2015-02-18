@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="LMTN202461" name="com.maax.businessmanager.common.databasecheckTEST" tests="1" failures="0" timestamp="19 Jan 2015 18:49:50 GMT" time="1.031" errors="0">
+  <testcase name="dbtest" time="1.03" classname="com.maax.businessmanager.common.databasecheckTEST"/>
+</testsuite>
