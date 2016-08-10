@@ -1,5 +1,8 @@
 package com.maax.businessmanager.util;
 
+
+import java.awt.AWTException;
+import java.awt.Robot;
 import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
@@ -24,6 +27,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -36,7 +40,7 @@ import org.testng.SkipException;
 public class TestBase {
 	
 	WebDriver d1_backupfirefox= null;
-	
+	Robot robot;
 	
 	public static Logger APPLICATION_LOG;
 
@@ -48,6 +52,8 @@ public class TestBase {
 		WebDriver d2; 
 		  APPLICATION_LOG=Logger.getLogger("devpinoyLogger");
 		objdata=util.getobjectdata(testcasename, Suite);
+		String currentrunmode=data.get("Runmode");
+		checkrunmodes(Suite, testcasename, currentrunmode);
 		if(grid)
 			d2=openbrowsergrid(data.get("Browser"));
 		else
@@ -89,12 +95,13 @@ public class TestBase {
 	public WebDriver openbrowser(String browsername){
 
 		WebDriver d1=null;
+		
 		if(browsername.equalsIgnoreCase("Firefox")){	
 			 
-			
+			//System.setProperty("webdriver.gecko.driver", "C:\\Seli\\geko\\geckodriver.exe ");
 		  d1=new FirefoxDriver();	
-			String scriptpath="C:\\autoit_myscripts\\pasesolution_IE.exe";
-			executeScript(scriptpath);
+			//String scriptpath="C:\\autoit_myscripts\\pasesolution_IE.exe";
+			//executeScript(scriptpath);
 			
 			
 	
@@ -107,6 +114,8 @@ public class TestBase {
 			
 		}
 		if(browsername.equalsIgnoreCase("IE")){
+			System.setProperty("webdriver.ie.driver", System.getProperty("user.dir")+"\\browsers\\IEDriverServer.exe");
+			
 				 d1=new InternetExplorerDriver();
 		}
 		//Implicit wait time out
@@ -124,7 +133,7 @@ public class TestBase {
 			 cap.setBrowserName("firefox");
 			cap.setPlatform(Platform.ANY);
 			
-			String scriptpath="C:\\autoit_myscripts\\pasesolution_IE.exe";
+			//String scriptpath="C:\\autoit_myscripts\\pasesolution_IE.exe";
 			//executeScript(scriptpath);
 			}
 		if(browsername.equalsIgnoreCase("Chrome")){
@@ -145,7 +154,7 @@ public class TestBase {
 		}
 	
 		try {
-				d1=new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),cap);
+				d1=new RemoteWebDriver(new URL("http://10.15.2.63:4444/wd/hub"),cap);
 		} catch (MalformedURLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -215,6 +224,56 @@ try {
 	}
 	
 	
+	public void hovermouse(String identifier,WebDriver d1){
+		
+		System.out.println(d1.findElement(By.xpath(objdata.get(identifier))).getLocation().x);
+		System.out.println(d1.findElement(By.xpath(objdata.get(identifier))).getLocation().y);
+		Actions act= new Actions(d1);
+	
+		act.moveToElement(d1.findElement(By.xpath(objdata.get(identifier)))).build().perform();
+//	try{	
+//	robot=new Robot();
+//	}catch(AWTException e){
+//		e.printStackTrace();
+//	}
+//	robot.mouseMove(260, 90);
+	
+	}
+	
+	
+	public String getcurrentselectedvale(String identifier, WebDriver d1){
+		WebElement 	e=d1.findElement(By.xpath(objdata.get(identifier)));
+		Select element= new Select(e);
+		return element.getFirstSelectedOption().toString();
+		
+	}
+	
+	public boolean findelementpresent(String identifier, WebDriver d1){
+		
+	
+		int count=d1.findElements(By.xpath(objdata.get(identifier))).size();
+	 	List<WebElement> element_array=d1.findElements(By.xpath(objdata.get(identifier)));
+	 	if (count>0){
+	 		return true;
+	 	}
+	 	return false;
+	}
+	
+	
+	public List<WebElement> findelementsonthepage(String identifier, WebDriver d1){
+		
+		List<WebElement> elemetsonpage=d1.findElements(By.xpath(objdata.get(identifier)));
+		return elemetsonpage;// *****chances of NULL pointer
+		
+		
+	}
+	
+	public boolean iselementeditable(String identifier, WebDriver d1){
+		boolean result=false;
+		result=d1.findElement(By.xpath(objdata.get(identifier))).isEnabled();
+		return result;
+	}
+	
 	//***********************************************
 	//***********PROJECT SPECIFIC FUNCTIONS**********
 	//************************************************
@@ -222,8 +281,9 @@ try {
 	public void dologin(WebDriver d1){
 	
 		waitforelementpresent("loginid",d1);
-		d1.findElement(By.xpath(objdata.get("loginid"))).sendKeys("BCCHASE");
-		d1.findElement(By.xpath(objdata.get("password"))).sendKeys("Welcome1");
+		
+		d1.findElement(By.xpath(objdata.get("loginid"))).sendKeys("othnvun");
+		d1.findElement(By.xpath(objdata.get("password"))).sendKeys("M@@xtest786");
 		d1.findElement(By.xpath(objdata.get("loginbtn"))).click();
 	}
 	
@@ -256,7 +316,7 @@ try {
 	 {
 	 	int sec=0;
 
-	 while (sec<60)
+	 while (sec<120)
 	 {
 	 	int count=d1.findElements(By.xpath(objdata.get(Element_xpath))).size();
 	 	List<WebElement> element_array=d1.findElements(By.xpath(objdata.get(Element_xpath)));
@@ -276,6 +336,35 @@ try {
 	 }
 
 	 }
+	 
+	 
+	 public void tableresultsearch(String table_header_identifier, WebDriver d1,String Column_to_search,String table_body_identifier,String data_to_search){
+	
+		List<WebElement> header_elements=d1.findElements(By.xpath(objdata.get(table_header_identifier)));
+for(int i=0;i<header_elements.size();i++){
+	
+	if(header_elements.get(i).getText().equalsIgnoreCase(Column_to_search)){
+		
+		List<WebElement> body_data_rows= d1.findElements(By.xpath(objdata.get(table_body_identifier)+"/td["+(i+1)+"]"));
+		System.out.println("^&&^&^&^&"+body_data_rows.size());
+		for(WebElement f:body_data_rows){
+//			System.out.println("&&&&&&&&&&&&&&"+data_to_search);
+//			System.out.println("&&&&&&&&&&&&&&"+f.getText());
+			if(f.getText().equalsIgnoreCase(data_to_search)){
+				f.click();
+//				System.out.println("*********************");
+				dynamicwait(d1);
+				break;
+			}
+		}
+	}
+}
+		 
+		 
+		 
+	 }
+	 
+	 
 	 
 	 
 	 public String queryit(){
@@ -319,5 +408,9 @@ try {
 			return agreevalue;
 	 
 }
+	 
+	 public void addperson(){
+		 
+	 }
 	 
 }

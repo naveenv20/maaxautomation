@@ -16,11 +16,24 @@
 </test-->
 <test name="Test 4">
     <classes>
-        <class name="com.maax.businessmanager.common.provision_copy_defect_Test" ></class>  
+        <class name="com.maax.businessmanager.common.Certificate_Add" ></class>  
     </classes>
 </test>
-
-
+<!--test name="Test 4">
+    <classes>
+        <class name="com.maax.businessmanager.common.person_add_test" ></class>  
+    </classes>
+</test-->
+<!--test name="Test 6">
+    <classes>
+        <class name="com.maax.businessmanager.common.plan_copy" ></class>  
+    </classes>
+</test-->
+<!--test name="Test 7">
+    <classes>
+        <class name="com.maax.businessmanager.common.Policy_add" ></class>  
+    </classes>
+</test-->
 
 </suite>
 

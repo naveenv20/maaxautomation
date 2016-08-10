@@ -1,13 +1,15 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <title>TestNG:  Unit Test</title>
 <style type="text/css">
-table caption,table.info_table,table.param,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
-table.info_table td,table.info_table th,table.param td,table.param th,table.passed td,table.passed th,table.failed td,table.failed th {
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
 border:1px solid #000099;padding:.25em .5em .25em .5em
 }
-table.param th {vertical-align:bottom}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
 td.numi,th.numi,td.numi_attn {
 text-align:right
 }
@@ -19,687 +21,91 @@ table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
 table.passed td,table tr.passedeven td {background-color: #33FF33;}
 table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
 table.passed td,table tr.skippedodd td {background-color: #dddddd;}
-table.failed tr.stripe td,table tr.failedodd td,table.param td.numi_attn {background-color: #FF3333;}
-table.failed td,table tr.failedeven td,table.param tr.stripe td.numi_attn {background-color: #DD0000;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
 tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
 p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
 div.shootout {padding:2em;border:3px #4854A8 solid}
 </style>
 </head>
 <body>
-<table cellspacing=0 cellpadding=0 class="param">
+<table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
 <tr><th colspan="7">commonTest</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Test 4</td><td class="numi">10</td><td class="numi">10</td><td class="numi">0</td><td class="numi_attn">8</td><td class="numi">331.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Test 4</td><td class="numi">5</td><td class="numi">1</td><td class="numi_attn">5</td><td class="numi">0</td><td class="numi">333.6 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 <tr><th colspan="7">My Project</th></tr>
 </table>
-<a id="summary"></a>
-<table cellspacing=0 cellpadding=0 class="passed">
-<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Time<br/>(Msecs)</th></tr>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
 <tr><th colspan="4">commonTest</th></tr>
-<tr><th colspan="4">Test 4 &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="8">com.maax.businessmanager.common.provision_copy_defect_Test<td><a href="#m1"><b>Provisioncopy</b>  </a></td><td class="numi">8</td><td class="numi">330036</td></tr><tr class="failedodd"><td><a href="#m2"><b>Provisioncopy</b>  </a></td><td class="numi">8</td><td class="numi">330036</td></tr><tr class="failedodd"><td><a href="#m3"><b>Provisioncopy</b>  </a></td><td class="numi">8</td><td class="numi">330036</td></tr><tr class="failedodd"><td><a href="#m4"><b>Provisioncopy</b>  </a></td><td class="numi">8</td><td class="numi">330036</td></tr><tr class="failedodd"><td><a href="#m5"><b>Provisioncopy</b>  </a></td><td class="numi">8</td><td class="numi">330036</td></tr><tr class="failedodd"><td><a href="#m6"><b>Provisioncopy</b>  </a></td><td class="numi">8</td><td class="numi">330036</td></tr><tr class="failedodd"><td><a href="#m7"><b>Provisioncopy</b>  </a></td><td class="numi">8</td><td class="numi">330036</td></tr><tr class="failedodd"><td><a href="#m8"><b>Provisioncopy</b>  </a></td><td class="numi">8</td><td class="numi">330036</td></tr>
+<tr><th colspan="4">Test 4 &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="5">com.maax.businessmanager.common.Certificate_Add</td><td><a href="#m1"><b>certificateadd</b>  </a></td><td class="numi">4</td><td>1470810210904</td><td class="numi">1003</td></tr><tr class="skippedodd"><td><a href="#m2"><b>certificateadd</b>  </a></td><td class="numi">4</td><td>1470810210904</td><td class="numi">1003</td></tr><tr class="skippedodd"><td><a href="#m3"><b>certificateadd</b>  </a></td><td class="numi">4</td><td>1470810210904</td><td class="numi">1003</td></tr><tr class="skippedodd"><td><a href="#m4"><b>certificateadd</b>  </a></td><td class="numi">4</td><td>1470810210904</td><td class="numi">1003</td></tr><tr class="skippedodd"><td><a href="#m5"><b>certificateadd</b>  </a></td><td class="numi">4</td><td>1470810210904</td><td class="numi">1003</td></tr>
 <tr><th colspan="4">Test 4 &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="10">com.maax.businessmanager.common.provision_copy_defect_Test<td><a href="#m9"><b>Provisioncopy</b>  </a></td><td class="numi">10</td><td class="numi">330036</td></tr><tr class="passedodd"><td><a href="#m10"><b>Provisioncopy</b>  </a></td><td class="numi">10</td><td class="numi">330036</td></tr><tr class="passedodd"><td><a href="#m11"><b>Provisioncopy</b>  </a></td><td class="numi">10</td><td class="numi">330036</td></tr><tr class="passedodd"><td><a href="#m12"><b>Provisioncopy</b>  </a></td><td class="numi">10</td><td class="numi">330036</td></tr><tr class="passedodd"><td><a href="#m13"><b>Provisioncopy</b>  </a></td><td class="numi">10</td><td class="numi">330036</td></tr><tr class="passedodd"><td><a href="#m14"><b>Provisioncopy</b>  </a></td><td class="numi">10</td><td class="numi">330036</td></tr><tr class="passedodd"><td><a href="#m15"><b>Provisioncopy</b>  </a></td><td class="numi">10</td><td class="numi">330036</td></tr><tr class="passedodd"><td><a href="#m16"><b>Provisioncopy</b>  </a></td><td class="numi">10</td><td class="numi">330036</td></tr><tr class="passedodd"><td><a href="#m17"><b>Provisioncopy</b>  </a></td><td class="numi">10</td><td class="numi">330036</td></tr><tr class="passedodd"><td><a href="#m18"><b>Provisioncopy</b>  </a></td><td class="numi">10</td><td class="numi">330036</td></tr>
+<tr class="passedodd"><td rowspan="5">com.maax.businessmanager.common.Certificate_Add</td><td><a href="#m6"><b>certificateadd</b>  </a></td><td class="numi">1</td><td>1470810210787</td><td class="numi">332570</td></tr><tr class="passedodd"><td><a href="#m7"><b>certificateadd</b>  </a></td><td class="numi">1</td><td>1470810210787</td><td class="numi">332570</td></tr><tr class="passedodd"><td><a href="#m8"><b>certificateadd</b>  </a></td><td class="numi">1</td><td>1470810210787</td><td class="numi">332570</td></tr><tr class="passedodd"><td><a href="#m9"><b>certificateadd</b>  </a></td><td class="numi">1</td><td>1470810210787</td><td class="numi">332570</td></tr><tr class="passedodd"><td><a href="#m10"><b>certificateadd</b>  </a></td><td class="numi">1</td><td>1470810210787</td><td class="numi">332570</td></tr>
 <tr><th colspan="4">My Project</th></tr>
 </table>
 <h1>Test 4</h1>
-<a id="m1"></a><h2>com.maax.businessmanager.common.provision_copy_defect_Test:Provisioncopy</h2>
-<table cellspacing=0 cellpadding=0 class="param">
-<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
-<tr><td style="padding-left:.5em;padding-right:2em">{Successmess=Data Updated Successfully, LOB=AD&D, Username=bcchase, Result=, Runmode=Y, Benefit=Optional AD&D, copypagecode=DEC3025, Password=Welcome1, copypagestatus=Inforce, copypagedesc=DEC3015DESC, Browser=Firefox}</td>
+<h2 id="m1">com.maax.businessmanager.common.Certificate_Add:certificateadd</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{beneficary_relation=Self, policy=09420 (MEDAVIE), Certificate_number=000000005, Class=01: Sample class description, postal_code=L1C 1E2, Password=Welcome1, Username=bcchase, Member_LastName=Happy-New-Year-Too, City=Toronto, Subdivision=, Adress_type=Home Address, Address_line_1=Temple Street, Member_DOB=01-04-1973, RiskFactor=Risk 1 - YM, Sal_amount=4500.0, Division=001, Employment_type=Full Time Salary, hiredate=01-04-2013, job_titile=SYS ANALYST, Income_freq=Monthly, Plan=NKPLMBC:NKPLMBC SAMPLE, Province=Ontario, Number_of_hours=40.0, beneficiary_ls=HSTESTABJLS, Designated date=01-01-2000, Runmode=N, Province_of_Billing=Ontario, Country=Canada, correspondence_laun=English, Occupation_code=YA-Construction, beneficary_percentage=100.0, Column_to_search=Group Legal Name, Result=, Application_date=01-04-2013, Group_Legal_name=NKMBCGRP, Member_Gender=Male, number_of_units=10.0, Family_Category=Single, Member_FirstName=Geliz-Navidad, Browser=Firefox, Income_type=Salary}</td>
 </tr>
 <tr><td style="padding-left:3em" colspan="1">
-<p>Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@id,&apos;connection-working&apos;) and contains(@class,&apos;iceOutConStatActv&apos;) and contains(@style,&apos;visibility: visible&apos;)]&quot;}
-Command duration or timeout: 9 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;LMTN202461&apos;, ip: &apos;167.74.108.52&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.4.0, platform=WINDOWS, nativeEvents=true, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 383361ab-4346-4d05-bfe9-fe4094a207f0</p>
-sun.reflect.GeneratedConstructorAccessor31.newInstance(Unknown Source)
-<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
-<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
-<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-<br/>at com.maax.businessmanager.util.TestBase.dynamicwait(TestBase.java:249)
-<br/>at com.maax.businessmanager.common.provision_copy_defect_Test.Provisioncopy(provision_copy_defect_Test.java:89)
-<br/>36 lines not shown
-<p>Caused by Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@id,&apos;connection-working&apos;) and contains(@class,&apos;iceOutConStatActv&apos;) and contains(@style,&apos;visibility: visible&apos;)]&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;LMTN202461&apos;, ip: &apos;167.74.108.52&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
-Driver info: driver.version: unknown</p>
-&lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous5108139089750429172webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:133)
-<br/>at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous5108139089750429172webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9650:3)
-<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous5108139089750429172webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11635:16)
-<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous5108139089750429172webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11640:7)
-<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous5108139089750429172webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11582:5)
-<br/>1 lines not shown
+<p>Test case is configured as No</p>
+com.maax.businessmanager.util.TestBase.checkrunmodes(TestBase.java:79)
+<br/>at com.maax.businessmanager.util.TestBase.init(TestBase.java:56)
+<br/>at com.maax.businessmanager.common.Certificate_Add.certificateadd(Certificate_Add.java:22)
+<br/>16 lines not shown
 </td></tr>
+</table>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m2"></a><h2>com.maax.businessmanager.common.provision_copy_defect_Test:Provisioncopy</h2>
-<table cellspacing=0 cellpadding=0 class="param">
-<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
-<tr><td style="padding-left:.5em;padding-right:2em">{Successmess=Data Updated Successfully, LOB=AD&D, Username=bcchase, Result=, Runmode=Y, Benefit=Member AD&D, copypagecode=DEC3025, Password=Welcome1, copypagestatus=Inforce, copypagedesc=DEC3015DESC, Browser=Firefox}</td>
+<h2 id="m2">com.maax.businessmanager.common.Certificate_Add:certificateadd</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{beneficary_relation=Self, policy=09420 (MEDAVIE), Certificate_number=000000004, Class=01: Sample class description, postal_code=V1C 1E2, Password=Welcome1, Username=bcchase, Member_LastName=Saulnier Levesque, City=Vancouver, Subdivision=, Adress_type=Home Address, Address_line_1=Temple Street, Member_DOB=01-05-1976, RiskFactor=Risk 1 - YM, Sal_amount=4500.0, Division=001, Employment_type=Full Time Salary, hiredate=01-05-2013, job_titile=SYS ANALYST, Income_freq=Monthly, Plan=NKPLMBC:NKPLMBC SAMPLE, Province=British Columbia, Number_of_hours=40.0, beneficiary_ls=HSTESTABJLS, Designated date=01-01-2000, Runmode=N, Province_of_Billing=British Columbia, Country=Canada, correspondence_laun=English, Occupation_code=YA-Construction, beneficary_percentage=100.0, Column_to_search=Group Legal Name, Result=, Application_date=01-05-2013, Group_Legal_name=NKMBCGRP, Member_Gender=Male, number_of_units=10.0, Family_Category=Single, Member_FirstName=Dhristabelladoux, Browser=Firefox, Income_type=Salary}</td>
 </tr>
 <tr><td style="padding-left:3em" colspan="1">
-<p>Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@id,&apos;connection-working&apos;) and contains(@class,&apos;iceOutConStatActv&apos;) and contains(@style,&apos;visibility: visible&apos;)]&quot;}
-Command duration or timeout: 9 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;LMTN202461&apos;, ip: &apos;167.74.108.52&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.4.0, platform=WINDOWS, nativeEvents=true, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: b15d4a34-b2f3-47c2-9def-9cdf1f9cc79c</p>
-sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
-<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
-<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-<br/>at com.maax.businessmanager.util.TestBase.dynamicwait(TestBase.java:249)
-<br/>at com.maax.businessmanager.common.provision_copy_defect_Test.Provisioncopy(provision_copy_defect_Test.java:89)
-<br/>36 lines not shown
-<p>Caused by Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@id,&apos;connection-working&apos;) and contains(@class,&apos;iceOutConStatActv&apos;) and contains(@style,&apos;visibility: visible&apos;)]&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;LMTN202461&apos;, ip: &apos;167.74.108.52&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
-Driver info: driver.version: unknown</p>
-&lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous6668945412590525596webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:133)
-<br/>at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous6668945412590525596webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9650:3)
-<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous6668945412590525596webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11635:16)
-<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous6668945412590525596webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11640:7)
-<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous6668945412590525596webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11582:5)
-<br/>1 lines not shown
+<p>Test case is configured as No</p>
+com.maax.businessmanager.util.TestBase.checkrunmodes(TestBase.java:79)
+<br/>at com.maax.businessmanager.util.TestBase.init(TestBase.java:56)
+<br/>at com.maax.businessmanager.common.Certificate_Add.certificateadd(Certificate_Add.java:22)
+<br/>16 lines not shown
 </td></tr>
+</table>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m3"></a><h2>com.maax.businessmanager.common.provision_copy_defect_Test:Provisioncopy</h2>
-<table cellspacing=0 cellpadding=0 class="param">
-<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
-<tr><td style="padding-left:.5em;padding-right:2em">{Successmess=Data Updated Successfully, LOB=Income Replacement, Username=bcchase, Result=, Runmode=Y, Benefit=LTD, copypagecode=DEC3025, Password=Welcome1, copypagestatus=Inforce, copypagedesc=DEC3015DESC, Browser=Firefox}</td>
+<h2 id="m3">com.maax.businessmanager.common.Certificate_Add:certificateadd</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{beneficary_relation=Self, policy=09420 (MEDAVIE), Certificate_number=000000005, Class=01: Sample class description, postal_code=A1C 1E2, Password=Welcome1, Username=bcchase, Member_LastName=Trenholm, City=Lake city, Subdivision=, Adress_type=Home Address, Address_line_1=Temple Street, Member_DOB=01-07-1970, RiskFactor=Risk 1 - YM, Sal_amount=4500.0, Division=001, Employment_type=Full Time Salary, hiredate=01-04-2013, job_titile=SYS ANALYST, Income_freq=Monthly, Plan=NKPLMBC:NKPLMBC SAMPLE, Province=NFLD &amp; Labrador, Number_of_hours=40.0, beneficiary_ls=HSTESTABJLS, Designated date=01-01-2000, Runmode=N, Province_of_Billing=NFLD &amp; Labrador, Country=Canada, correspondence_laun=English, Occupation_code=YA-Construction, beneficary_percentage=100.0, Column_to_search=Group Legal Name, Result=, Application_date=01-04-2013, Group_Legal_name=NKMBCGRP, Member_Gender=Male, number_of_units=10.0, Family_Category=Single, Member_FirstName=Kasper, Browser=Firefox, Income_type=Salary}</td>
 </tr>
 <tr><td style="padding-left:3em" colspan="1">
-<p>Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@id,&apos;connection-working&apos;) and contains(@class,&apos;iceOutConStatActv&apos;) and contains(@style,&apos;visibility: visible&apos;)]&quot;}
-Command duration or timeout: 10 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;LMTN202461&apos;, ip: &apos;167.74.108.52&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.4.0, platform=WINDOWS, nativeEvents=true, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 564b4ef5-a8a5-40da-9c65-83c2c9d82f71</p>
-sun.reflect.GeneratedConstructorAccessor31.newInstance(Unknown Source)
-<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
-<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
-<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-<br/>at com.maax.businessmanager.util.TestBase.dynamicwait(TestBase.java:249)
-<br/>at com.maax.businessmanager.common.provision_copy_defect_Test.Provisioncopy(provision_copy_defect_Test.java:89)
-<br/>36 lines not shown
-<p>Caused by Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@id,&apos;connection-working&apos;) and contains(@class,&apos;iceOutConStatActv&apos;) and contains(@style,&apos;visibility: visible&apos;)]&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;LMTN202461&apos;, ip: &apos;167.74.108.52&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
-Driver info: driver.version: unknown</p>
-&lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous1110575283838732933webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:133)
-<br/>at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous1110575283838732933webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9650:3)
-<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous1110575283838732933webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11635:16)
-<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous1110575283838732933webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11640:7)
-<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous1110575283838732933webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11582:5)
-<br/>1 lines not shown
+<p>Test case is configured as No</p>
+com.maax.businessmanager.util.TestBase.checkrunmodes(TestBase.java:79)
+<br/>at com.maax.businessmanager.util.TestBase.init(TestBase.java:56)
+<br/>at com.maax.businessmanager.common.Certificate_Add.certificateadd(Certificate_Add.java:22)
+<br/>16 lines not shown
 </td></tr>
+</table>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m4"></a><h2>com.maax.businessmanager.common.provision_copy_defect_Test:Provisioncopy</h2>
-<table cellspacing=0 cellpadding=0 class="param">
-<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
-<tr><td style="padding-left:.5em;padding-right:2em">{Successmess=Data Updated Successfully, LOB=Life, Username=bcchase, Result=, Runmode=Y, Benefit=Opt Spousal Life, copypagecode=DEC3025, Password=Welcome1, copypagestatus=Inforce, copypagedesc=DEC3015DESC, Browser=Firefox}</td>
+<h2 id="m4">com.maax.businessmanager.common.Certificate_Add:certificateadd</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{beneficary_relation=Self, policy=09420 (MEDAVIE), Certificate_number=000000005, Class=01: Sample class description, postal_code=E1C 1E2, Password=Welcome1, Username=bcchase, Member_LastName=Maxwell-Robbins, City=Moncton, Subdivision=, Adress_type=Home Address, Address_line_1=Temple Street, Member_DOB=01-04-1973, RiskFactor=Risk 1 - YM, Sal_amount=4500.0, Division=001, Employment_type=Full Time Salary, hiredate=02-04-2013, job_titile=SYS ANALYST, Income_freq=Monthly, Plan=NKPLMBC:NKPLMBC SAMPLE, Province=New Brunswick, Number_of_hours=40.0, beneficiary_ls=HSTESTABJLS, Designated date=01-01-2000, Runmode=N, Province_of_Billing=New Brunswick, Country=Canada, correspondence_laun=English, Occupation_code=YA-Construction, beneficary_percentage=100.0, Column_to_search=Group Legal Name, Result=, Application_date=02-04-2013, Group_Legal_name=NKMBCGRP, Member_Gender=Male, number_of_units=10.0, Family_Category=Single, Member_FirstName=Cobbi-Jo , Browser=Firefox, Income_type=Salary}</td>
 </tr>
 <tr><td style="padding-left:3em" colspan="1">
-<p>Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@id,&apos;connection-working&apos;) and contains(@class,&apos;iceOutConStatActv&apos;) and contains(@style,&apos;visibility: visible&apos;)]&quot;}
-Command duration or timeout: 8 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;LMTN202461&apos;, ip: &apos;167.74.108.52&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.4.0, platform=WINDOWS, nativeEvents=true, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: d081365e-d57b-49ce-acea-3ce690ee8a6e</p>
-sun.reflect.GeneratedConstructorAccessor31.newInstance(Unknown Source)
-<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
-<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
-<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-<br/>at com.maax.businessmanager.util.TestBase.dynamicwait(TestBase.java:249)
-<br/>at com.maax.businessmanager.common.provision_copy_defect_Test.Provisioncopy(provision_copy_defect_Test.java:89)
-<br/>36 lines not shown
-<p>Caused by Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@id,&apos;connection-working&apos;) and contains(@class,&apos;iceOutConStatActv&apos;) and contains(@style,&apos;visibility: visible&apos;)]&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;LMTN202461&apos;, ip: &apos;167.74.108.52&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
-Driver info: driver.version: unknown</p>
-&lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous3049790335337158708webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:133)
-<br/>at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous3049790335337158708webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9650:3)
-<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous3049790335337158708webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11635:16)
-<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous3049790335337158708webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11640:7)
-<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous3049790335337158708webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11582:5)
-<br/>1 lines not shown
+<p>Test case is configured as No</p>
+com.maax.businessmanager.util.TestBase.checkrunmodes(TestBase.java:79)
+<br/>at com.maax.businessmanager.util.TestBase.init(TestBase.java:56)
+<br/>at com.maax.businessmanager.common.Certificate_Add.certificateadd(Certificate_Add.java:22)
+<br/>16 lines not shown
 </td></tr>
+</table>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m5"></a><h2>com.maax.businessmanager.common.provision_copy_defect_Test:Provisioncopy</h2>
-<table cellspacing=0 cellpadding=0 class="param">
-<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
-<tr><td style="padding-left:.5em;padding-right:2em">{Successmess=Data Updated Successfully, LOB=Life, Username=bcchase, Result=, Runmode=Y, Benefit=Dependent Life, copypagecode=DEC3025, Password=Welcome1, copypagestatus=Inforce, copypagedesc=DEC3015DESC, Browser=Firefox}</td>
+<h2 id="m5">com.maax.businessmanager.common.Certificate_Add:certificateadd</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>{beneficary_relation=Self, policy=09420 (MEDAVIE), Certificate_number=000000003, Class=01: Sample class description, postal_code=T1C 1E2, Password=Welcome1, Username=bcchase, Member_LastName=Romganaikaloo, City=Lake City, Subdivision=, Adress_type=Home Address, Address_line_1=Temple Street, Member_DOB=01-05-1972, RiskFactor=Risk 1 - YM, Sal_amount=4500.0, Division=001, Employment_type=Full Time Salary, hiredate=01-04-2013, job_titile=SYS ANALYST, Income_freq=Monthly, Plan=NKPLMBC:NKPLMBC SAMPLE, Province=Alberta, Number_of_hours=40.0, beneficiary_ls=HSTESTABJLS, Designated date=01-01-2000, Runmode=Y, Province_of_Billing=Alberta, Country=Canada, correspondence_laun=English, Occupation_code=YA-Construction, beneficary_percentage=100.0, Column_to_search=Group Legal Name, Result=, Application_date=01-04-2013, Group_Legal_name=NKMBCGRP, Member_Gender=Male, number_of_units=10.0, Family_Category=Single, Member_FirstName=Vargaret-Catherine, Browser=Firefox, Income_type=Salary}</td>
 </tr>
-<tr><td style="padding-left:3em" colspan="1">
-<p>Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@id,&apos;connection-working&apos;) and contains(@class,&apos;iceOutConStatActv&apos;) and contains(@style,&apos;visibility: visible&apos;)]&quot;}
-Command duration or timeout: 9 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;LMTN202461&apos;, ip: &apos;167.74.108.52&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.4.0, platform=WINDOWS, nativeEvents=true, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 2ca1ed05-0706-41fe-8e81-c0627fe4730f</p>
-sun.reflect.GeneratedConstructorAccessor31.newInstance(Unknown Source)
-<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
-<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
-<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-<br/>at com.maax.businessmanager.util.TestBase.dynamicwait(TestBase.java:249)
-<br/>at com.maax.businessmanager.common.provision_copy_defect_Test.Provisioncopy(provision_copy_defect_Test.java:89)
-<br/>36 lines not shown
-<p>Caused by Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@id,&apos;connection-working&apos;) and contains(@class,&apos;iceOutConStatActv&apos;) and contains(@style,&apos;visibility: visible&apos;)]&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;LMTN202461&apos;, ip: &apos;167.74.108.52&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
-Driver info: driver.version: unknown</p>
-&lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous8767221373210260351webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:133)
-<br/>at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous8767221373210260351webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9650:3)
-<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous8767221373210260351webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11635:16)
-<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous8767221373210260351webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11640:7)
-<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous8767221373210260351webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11582:5)
-<br/>1 lines not shown
-</td></tr>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m6"></a><h2>com.maax.businessmanager.common.provision_copy_defect_Test:Provisioncopy</h2>
-<table cellspacing=0 cellpadding=0 class="param">
-<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
-<tr><td style="padding-left:.5em;padding-right:2em">{Successmess=Data Updated Successfully, LOB=Life, Username=bcchase, Result=, Runmode=Y, Benefit=Member Life, copypagecode=DEC3025, Password=Welcome1, copypagestatus=Inforce, copypagedesc=DEC3015DESC, Browser=Firefox}</td>
-</tr>
-<tr><td style="padding-left:3em" colspan="1">
-<p>Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@id,&apos;connection-working&apos;) and contains(@class,&apos;iceOutConStatActv&apos;) and contains(@style,&apos;visibility: visible&apos;)]&quot;}
-Command duration or timeout: 15 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;LMTN202461&apos;, ip: &apos;167.74.108.52&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.4.0, platform=WINDOWS, nativeEvents=true, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 4585e2aa-ad2a-4608-b17e-6f7ad43bfaed</p>
-sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
-<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
-<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-<br/>at com.maax.businessmanager.util.TestBase.dynamicwait(TestBase.java:249)
-<br/>at com.maax.businessmanager.common.provision_copy_defect_Test.Provisioncopy(provision_copy_defect_Test.java:89)
-<br/>36 lines not shown
-<p>Caused by Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@id,&apos;connection-working&apos;) and contains(@class,&apos;iceOutConStatActv&apos;) and contains(@style,&apos;visibility: visible&apos;)]&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;LMTN202461&apos;, ip: &apos;167.74.108.52&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
-Driver info: driver.version: unknown</p>
-&lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous8014481421836216495webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:133)
-<br/>at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous8014481421836216495webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9650:3)
-<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous8014481421836216495webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11635:16)
-<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous8014481421836216495webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11640:7)
-<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous8014481421836216495webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11582:5)
-<br/>1 lines not shown
-</td></tr>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m7"></a><h2>com.maax.businessmanager.common.provision_copy_defect_Test:Provisioncopy</h2>
-<table cellspacing=0 cellpadding=0 class="param">
-<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
-<tr><td style="padding-left:.5em;padding-right:2em">{Successmess=Data Updated Successfully, LOB=Income Replacement, Username=bcchase, Result=, Runmode=Y, Benefit=STD, copypagecode=DEC3025, Password=Welcome1, copypagestatus=Inforce, copypagedesc=DEC3015DESC, Browser=Firefox}</td>
-</tr>
-<tr><td style="padding-left:3em" colspan="1">
-<p>Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@id,&apos;connection-working&apos;) and contains(@class,&apos;iceOutConStatActv&apos;) and contains(@style,&apos;visibility: visible&apos;)]&quot;}
-Command duration or timeout: 12 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;LMTN202461&apos;, ip: &apos;167.74.108.52&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.4.0, platform=WINDOWS, nativeEvents=true, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 3429a9c7-2b85-4ff3-a68b-36cfa6a0c706</p>
-sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
-<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
-<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-<br/>at com.maax.businessmanager.util.TestBase.dynamicwait(TestBase.java:249)
-<br/>at com.maax.businessmanager.common.provision_copy_defect_Test.Provisioncopy(provision_copy_defect_Test.java:89)
-<br/>36 lines not shown
-<p>Caused by Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@id,&apos;connection-working&apos;) and contains(@class,&apos;iceOutConStatActv&apos;) and contains(@style,&apos;visibility: visible&apos;)]&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;LMTN202461&apos;, ip: &apos;167.74.108.52&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
-Driver info: driver.version: unknown</p>
-&lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous3025438996023006925webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:133)
-<br/>at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous3025438996023006925webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9650:3)
-<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous3025438996023006925webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11635:16)
-<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous3025438996023006925webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11640:7)
-<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous3025438996023006925webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11582:5)
-<br/>1 lines not shown
-</td></tr>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m8"></a><h2>com.maax.businessmanager.common.provision_copy_defect_Test:Provisioncopy</h2>
-<table cellspacing=0 cellpadding=0 class="param">
-<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
-<tr><td style="padding-left:.5em;padding-right:2em">{Successmess=Data Updated Successfully, LOB=Life, Username=bcchase, Result=, Runmode=Y, Benefit=Critical Illness, copypagecode=DEC3025, Password=Welcome1, copypagestatus=Inforce, copypagedesc=DEC3015DESC, Browser=Firefox}</td>
-</tr>
-<tr><td style="padding-left:3em" colspan="1">
-<p>Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@id,&apos;connection-working&apos;) and contains(@class,&apos;iceOutConStatActv&apos;) and contains(@style,&apos;visibility: visible&apos;)]&quot;}
-Command duration or timeout: 7 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;LMTN202461&apos;, ip: &apos;167.74.108.52&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.4.0, platform=WINDOWS, nativeEvents=true, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 5e2378dd-f87e-4206-9caf-7e26583df0d0</p>
-sun.reflect.GeneratedConstructorAccessor31.newInstance(Unknown Source)
-<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
-<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
-<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-<br/>at com.maax.businessmanager.util.TestBase.dynamicwait(TestBase.java:249)
-<br/>at com.maax.businessmanager.common.provision_copy_defect_Test.Provisioncopy(provision_copy_defect_Test.java:89)
-<br/>36 lines not shown
-<p>Caused by Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@id,&apos;connection-working&apos;) and contains(@class,&apos;iceOutConStatActv&apos;) and contains(@style,&apos;visibility: visible&apos;)]&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;LMTN202461&apos;, ip: &apos;167.74.108.52&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
-Driver info: driver.version: unknown</p>
-&lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous3166982313200375990webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:133)
-<br/>at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous3166982313200375990webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9650:3)
-<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous3166982313200375990webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11635:16)
-<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous3166982313200375990webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11640:7)
-<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous3166982313200375990webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11582:5)
-<br/>1 lines not shown
-</td></tr>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m9"></a><h2>com.maax.businessmanager.common.provision_copy_defect_Test:Provisioncopy</h2>
-<table cellspacing=0 cellpadding=0 class="param">
-<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
-<tr><td style="padding-left:.5em;padding-right:2em">{Successmess=Data Updated Successfully, LOB=AD&D, Username=bcchase, Result=, Runmode=Y, Benefit=Optional AD&D, copypagecode=DEC3025, Password=Welcome1, copypagestatus=Inforce, copypagedesc=DEC3015DESC, Browser=Firefox}</td>
-</tr>
-<tr><td style="padding-left:3em" colspan="1">
-<p>Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@id,&apos;connection-working&apos;) and contains(@class,&apos;iceOutConStatActv&apos;) and contains(@style,&apos;visibility: visible&apos;)]&quot;}
-Command duration or timeout: 9 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;LMTN202461&apos;, ip: &apos;167.74.108.52&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.4.0, platform=WINDOWS, nativeEvents=true, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 383361ab-4346-4d05-bfe9-fe4094a207f0</p>
-sun.reflect.GeneratedConstructorAccessor31.newInstance(Unknown Source)
-<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
-<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
-<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-<br/>at com.maax.businessmanager.util.TestBase.dynamicwait(TestBase.java:249)
-<br/>at com.maax.businessmanager.common.provision_copy_defect_Test.Provisioncopy(provision_copy_defect_Test.java:89)
-<br/>36 lines not shown
-<p>Caused by Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@id,&apos;connection-working&apos;) and contains(@class,&apos;iceOutConStatActv&apos;) and contains(@style,&apos;visibility: visible&apos;)]&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;LMTN202461&apos;, ip: &apos;167.74.108.52&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
-Driver info: driver.version: unknown</p>
-&lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous5108139089750429172webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:133)
-<br/>at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous5108139089750429172webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9650:3)
-<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous5108139089750429172webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11635:16)
-<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous5108139089750429172webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11640:7)
-<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous5108139089750429172webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11582:5)
-<br/>1 lines not shown
-</td></tr>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m10"></a><h2>com.maax.businessmanager.common.provision_copy_defect_Test:Provisioncopy</h2>
-<table cellspacing=0 cellpadding=0 class="param">
-<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
-<tr><td style="padding-left:.5em;padding-right:2em">{Successmess=Data Updated Successfully, LOB=AD&D, Username=bcchase, Result=, Runmode=Y, Benefit=Member AD&D, copypagecode=DEC3025, Password=Welcome1, copypagestatus=Inforce, copypagedesc=DEC3015DESC, Browser=Firefox}</td>
-</tr>
-<tr><td style="padding-left:3em" colspan="1">
-<p>Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@id,&apos;connection-working&apos;) and contains(@class,&apos;iceOutConStatActv&apos;) and contains(@style,&apos;visibility: visible&apos;)]&quot;}
-Command duration or timeout: 9 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;LMTN202461&apos;, ip: &apos;167.74.108.52&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.4.0, platform=WINDOWS, nativeEvents=true, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: b15d4a34-b2f3-47c2-9def-9cdf1f9cc79c</p>
-sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
-<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
-<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-<br/>at com.maax.businessmanager.util.TestBase.dynamicwait(TestBase.java:249)
-<br/>at com.maax.businessmanager.common.provision_copy_defect_Test.Provisioncopy(provision_copy_defect_Test.java:89)
-<br/>36 lines not shown
-<p>Caused by Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@id,&apos;connection-working&apos;) and contains(@class,&apos;iceOutConStatActv&apos;) and contains(@style,&apos;visibility: visible&apos;)]&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;LMTN202461&apos;, ip: &apos;167.74.108.52&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
-Driver info: driver.version: unknown</p>
-&lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous6668945412590525596webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:133)
-<br/>at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous6668945412590525596webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9650:3)
-<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous6668945412590525596webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11635:16)
-<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous6668945412590525596webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11640:7)
-<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous6668945412590525596webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11582:5)
-<br/>1 lines not shown
-</td></tr>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m11"></a><h2>com.maax.businessmanager.common.provision_copy_defect_Test:Provisioncopy</h2>
-<table cellspacing=0 cellpadding=0 class="param">
-<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
-<tr><td style="padding-left:.5em;padding-right:2em">{Successmess=Data Updated Successfully, LOB=Life, Username=bcchase, Result=, Runmode=Y, Benefit=Optional Child Life, copypagecode=DEC3025, Password=Welcome1, copypagestatus=Inforce, copypagedesc=DEC3015DESC, Browser=Firefox}</td>
-</tr>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m12"></a><h2>com.maax.businessmanager.common.provision_copy_defect_Test:Provisioncopy</h2>
-<table cellspacing=0 cellpadding=0 class="param">
-<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
-<tr><td style="padding-left:.5em;padding-right:2em">{Successmess=Data Updated Successfully, LOB=Income Replacement, Username=bcchase, Result=, Runmode=Y, Benefit=LTD, copypagecode=DEC3025, Password=Welcome1, copypagestatus=Inforce, copypagedesc=DEC3015DESC, Browser=Firefox}</td>
-</tr>
-<tr><td style="padding-left:3em" colspan="1">
-<p>Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@id,&apos;connection-working&apos;) and contains(@class,&apos;iceOutConStatActv&apos;) and contains(@style,&apos;visibility: visible&apos;)]&quot;}
-Command duration or timeout: 10 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;LMTN202461&apos;, ip: &apos;167.74.108.52&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.4.0, platform=WINDOWS, nativeEvents=true, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 564b4ef5-a8a5-40da-9c65-83c2c9d82f71</p>
-sun.reflect.GeneratedConstructorAccessor31.newInstance(Unknown Source)
-<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
-<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
-<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-<br/>at com.maax.businessmanager.util.TestBase.dynamicwait(TestBase.java:249)
-<br/>at com.maax.businessmanager.common.provision_copy_defect_Test.Provisioncopy(provision_copy_defect_Test.java:89)
-<br/>36 lines not shown
-<p>Caused by Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@id,&apos;connection-working&apos;) and contains(@class,&apos;iceOutConStatActv&apos;) and contains(@style,&apos;visibility: visible&apos;)]&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;LMTN202461&apos;, ip: &apos;167.74.108.52&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
-Driver info: driver.version: unknown</p>
-&lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous1110575283838732933webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:133)
-<br/>at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous1110575283838732933webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9650:3)
-<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous1110575283838732933webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11635:16)
-<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous1110575283838732933webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11640:7)
-<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous1110575283838732933webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11582:5)
-<br/>1 lines not shown
-</td></tr>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m13"></a><h2>com.maax.businessmanager.common.provision_copy_defect_Test:Provisioncopy</h2>
-<table cellspacing=0 cellpadding=0 class="param">
-<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
-<tr><td style="padding-left:.5em;padding-right:2em">{Successmess=Data Updated Successfully, LOB=Life, Username=bcchase, Result=, Runmode=Y, Benefit=Opt Spousal Life, copypagecode=DEC3025, Password=Welcome1, copypagestatus=Inforce, copypagedesc=DEC3015DESC, Browser=Firefox}</td>
-</tr>
-<tr><td style="padding-left:3em" colspan="1">
-<p>Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@id,&apos;connection-working&apos;) and contains(@class,&apos;iceOutConStatActv&apos;) and contains(@style,&apos;visibility: visible&apos;)]&quot;}
-Command duration or timeout: 8 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;LMTN202461&apos;, ip: &apos;167.74.108.52&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.4.0, platform=WINDOWS, nativeEvents=true, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: d081365e-d57b-49ce-acea-3ce690ee8a6e</p>
-sun.reflect.GeneratedConstructorAccessor31.newInstance(Unknown Source)
-<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
-<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
-<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-<br/>at com.maax.businessmanager.util.TestBase.dynamicwait(TestBase.java:249)
-<br/>at com.maax.businessmanager.common.provision_copy_defect_Test.Provisioncopy(provision_copy_defect_Test.java:89)
-<br/>36 lines not shown
-<p>Caused by Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@id,&apos;connection-working&apos;) and contains(@class,&apos;iceOutConStatActv&apos;) and contains(@style,&apos;visibility: visible&apos;)]&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;LMTN202461&apos;, ip: &apos;167.74.108.52&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
-Driver info: driver.version: unknown</p>
-&lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous3049790335337158708webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:133)
-<br/>at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous3049790335337158708webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9650:3)
-<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous3049790335337158708webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11635:16)
-<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous3049790335337158708webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11640:7)
-<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous3049790335337158708webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11582:5)
-<br/>1 lines not shown
-</td></tr>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m14"></a><h2>com.maax.businessmanager.common.provision_copy_defect_Test:Provisioncopy</h2>
-<table cellspacing=0 cellpadding=0 class="param">
-<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
-<tr><td style="padding-left:.5em;padding-right:2em">{Successmess=Data Updated Successfully, LOB=Life, Username=bcchase, Result=, Runmode=Y, Benefit=Optional Member Life, copypagecode=DEC3025, Password=Welcome1, copypagestatus=Inforce, copypagedesc=DEC3015DESC, Browser=Firefox}</td>
-</tr>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m15"></a><h2>com.maax.businessmanager.common.provision_copy_defect_Test:Provisioncopy</h2>
-<table cellspacing=0 cellpadding=0 class="param">
-<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
-<tr><td style="padding-left:.5em;padding-right:2em">{Successmess=Data Updated Successfully, LOB=Life, Username=bcchase, Result=, Runmode=Y, Benefit=Dependent Life, copypagecode=DEC3025, Password=Welcome1, copypagestatus=Inforce, copypagedesc=DEC3015DESC, Browser=Firefox}</td>
-</tr>
-<tr><td style="padding-left:3em" colspan="1">
-<p>Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@id,&apos;connection-working&apos;) and contains(@class,&apos;iceOutConStatActv&apos;) and contains(@style,&apos;visibility: visible&apos;)]&quot;}
-Command duration or timeout: 9 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;LMTN202461&apos;, ip: &apos;167.74.108.52&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.4.0, platform=WINDOWS, nativeEvents=true, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 2ca1ed05-0706-41fe-8e81-c0627fe4730f</p>
-sun.reflect.GeneratedConstructorAccessor31.newInstance(Unknown Source)
-<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
-<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
-<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-<br/>at com.maax.businessmanager.util.TestBase.dynamicwait(TestBase.java:249)
-<br/>at com.maax.businessmanager.common.provision_copy_defect_Test.Provisioncopy(provision_copy_defect_Test.java:89)
-<br/>36 lines not shown
-<p>Caused by Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@id,&apos;connection-working&apos;) and contains(@class,&apos;iceOutConStatActv&apos;) and contains(@style,&apos;visibility: visible&apos;)]&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;LMTN202461&apos;, ip: &apos;167.74.108.52&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
-Driver info: driver.version: unknown</p>
-&lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous8767221373210260351webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:133)
-<br/>at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous8767221373210260351webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9650:3)
-<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous8767221373210260351webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11635:16)
-<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous8767221373210260351webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11640:7)
-<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous8767221373210260351webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11582:5)
-<br/>1 lines not shown
-</td></tr>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m16"></a><h2>com.maax.businessmanager.common.provision_copy_defect_Test:Provisioncopy</h2>
-<table cellspacing=0 cellpadding=0 class="param">
-<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
-<tr><td style="padding-left:.5em;padding-right:2em">{Successmess=Data Updated Successfully, LOB=Life, Username=bcchase, Result=, Runmode=Y, Benefit=Member Life, copypagecode=DEC3025, Password=Welcome1, copypagestatus=Inforce, copypagedesc=DEC3015DESC, Browser=Firefox}</td>
-</tr>
-<tr><td style="padding-left:3em" colspan="1">
-<p>Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@id,&apos;connection-working&apos;) and contains(@class,&apos;iceOutConStatActv&apos;) and contains(@style,&apos;visibility: visible&apos;)]&quot;}
-Command duration or timeout: 15 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;LMTN202461&apos;, ip: &apos;167.74.108.52&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.4.0, platform=WINDOWS, nativeEvents=true, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 4585e2aa-ad2a-4608-b17e-6f7ad43bfaed</p>
-sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
-<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
-<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-<br/>at com.maax.businessmanager.util.TestBase.dynamicwait(TestBase.java:249)
-<br/>at com.maax.businessmanager.common.provision_copy_defect_Test.Provisioncopy(provision_copy_defect_Test.java:89)
-<br/>36 lines not shown
-<p>Caused by Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@id,&apos;connection-working&apos;) and contains(@class,&apos;iceOutConStatActv&apos;) and contains(@style,&apos;visibility: visible&apos;)]&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;LMTN202461&apos;, ip: &apos;167.74.108.52&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
-Driver info: driver.version: unknown</p>
-&lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous8014481421836216495webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:133)
-<br/>at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous8014481421836216495webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9650:3)
-<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous8014481421836216495webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11635:16)
-<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous8014481421836216495webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11640:7)
-<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous8014481421836216495webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11582:5)
-<br/>1 lines not shown
-</td></tr>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m17"></a><h2>com.maax.businessmanager.common.provision_copy_defect_Test:Provisioncopy</h2>
-<table cellspacing=0 cellpadding=0 class="param">
-<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
-<tr><td style="padding-left:.5em;padding-right:2em">{Successmess=Data Updated Successfully, LOB=Income Replacement, Username=bcchase, Result=, Runmode=Y, Benefit=STD, copypagecode=DEC3025, Password=Welcome1, copypagestatus=Inforce, copypagedesc=DEC3015DESC, Browser=Firefox}</td>
-</tr>
-<tr><td style="padding-left:3em" colspan="1">
-<p>Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@id,&apos;connection-working&apos;) and contains(@class,&apos;iceOutConStatActv&apos;) and contains(@style,&apos;visibility: visible&apos;)]&quot;}
-Command duration or timeout: 12 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;LMTN202461&apos;, ip: &apos;167.74.108.52&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.4.0, platform=WINDOWS, nativeEvents=true, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 3429a9c7-2b85-4ff3-a68b-36cfa6a0c706</p>
-sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
-<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
-<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-<br/>at com.maax.businessmanager.util.TestBase.dynamicwait(TestBase.java:249)
-<br/>at com.maax.businessmanager.common.provision_copy_defect_Test.Provisioncopy(provision_copy_defect_Test.java:89)
-<br/>36 lines not shown
-<p>Caused by Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@id,&apos;connection-working&apos;) and contains(@class,&apos;iceOutConStatActv&apos;) and contains(@style,&apos;visibility: visible&apos;)]&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;LMTN202461&apos;, ip: &apos;167.74.108.52&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
-Driver info: driver.version: unknown</p>
-&lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous3025438996023006925webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:133)
-<br/>at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous3025438996023006925webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9650:3)
-<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous3025438996023006925webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11635:16)
-<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous3025438996023006925webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11640:7)
-<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous3025438996023006925webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11582:5)
-<br/>1 lines not shown
-</td></tr>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m18"></a><h2>com.maax.businessmanager.common.provision_copy_defect_Test:Provisioncopy</h2>
-<table cellspacing=0 cellpadding=0 class="param">
-<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
-<tr><td style="padding-left:.5em;padding-right:2em">{Successmess=Data Updated Successfully, LOB=Life, Username=bcchase, Result=, Runmode=Y, Benefit=Critical Illness, copypagecode=DEC3025, Password=Welcome1, copypagestatus=Inforce, copypagedesc=DEC3015DESC, Browser=Firefox}</td>
-</tr>
-<tr><td style="padding-left:3em" colspan="1">
-<p>Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@id,&apos;connection-working&apos;) and contains(@class,&apos;iceOutConStatActv&apos;) and contains(@style,&apos;visibility: visible&apos;)]&quot;}
-Command duration or timeout: 7 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;LMTN202461&apos;, ip: &apos;167.74.108.52&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.4.0, platform=WINDOWS, nativeEvents=true, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 5e2378dd-f87e-4206-9caf-7e26583df0d0</p>
-sun.reflect.GeneratedConstructorAccessor31.newInstance(Unknown Source)
-<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
-<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
-<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-<br/>at com.maax.businessmanager.util.TestBase.dynamicwait(TestBase.java:249)
-<br/>at com.maax.businessmanager.common.provision_copy_defect_Test.Provisioncopy(provision_copy_defect_Test.java:89)
-<br/>36 lines not shown
-<p>Caused by Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@id,&apos;connection-working&apos;) and contains(@class,&apos;iceOutConStatActv&apos;) and contains(@style,&apos;visibility: visible&apos;)]&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
-System info: host: &apos;LMTN202461&apos;, ip: &apos;167.74.108.52&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
-Driver info: driver.version: unknown</p>
-&lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous3166982313200375990webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9641:133)
-<br/>at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous3166982313200375990webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9650:3)
-<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous3166982313200375990webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11635:16)
-<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous3166982313200375990webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11640:7)
-<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/othnvun/AppData/Local/Temp/anonymous3166982313200375990webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11582:5)
-<br/>1 lines not shown
-</td></tr>
+</table>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

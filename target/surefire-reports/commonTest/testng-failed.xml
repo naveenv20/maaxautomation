@@ -4,13 +4,13 @@
   <listeners>
     <listener class-name="com.maax.businessmanager.util.CustomListener"/>
   </listeners>
-  <test name="Test 4(failed)" preserve-order="false">
+  <test name="Test 4(failed)">
     <classes>
-      <class name="com.maax.businessmanager.common.provision_copy_defect_Test">
+      <class name="com.maax.businessmanager.common.Certificate_Add">
         <methods>
-          <include name="Provisioncopy"/>
+          <include name="certificateadd" invocation-numbers="3 2 1 4"/>
         </methods>
-      </class>
+      </class> <!-- com.maax.businessmanager.common.Certificate_Add -->
     </classes>
-  </test>
-</suite>
+  </test> <!-- Test 4(failed) -->
+</suite> <!-- Failed suite [commonTest] -->
